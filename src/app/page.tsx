@@ -1,7 +1,7 @@
 import dynamic from 'next/dynamic';
 import { useMemo } from 'react';
 
-export default async function Page() {
+export default function Page() {
   const Map = useMemo(
     () =>
       dynamic(() => import('../components/Map'), {

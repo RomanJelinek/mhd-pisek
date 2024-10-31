@@ -6,33 +6,30 @@ import 'leaflet/dist/leaflet.css';
 import 'leaflet/dist/leaflet.css';
 import 'leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css';
 import 'leaflet-defaulticon-compatibility';
-import L from 'leaflet';
+import L, { LatLng, LatLngBounds } from 'leaflet';
 
 export default function App() {
   function LocationMarker() {
-    const [position, setPosition] = useState(null);
-    const [bbox, setBbox] = useState([]);
+    const [position, setPosition] = useState<LatLng | null>(null);
+    const [bbox, setBbox] = useState<string[]>([]);
 
     const map = useMap();
 
     useEffect(() => {
       if (typeof window !== 'undefined') {
-        map.locate().on('locationfound', function (e) {
-          // @typescript-eslint/no-explicit-any
-          setPosition(e.latlng as any);
+        map.locate().on('locationfound', function (e: L.LocationEvent) {
+          setPosition(e.latlng);
           map.flyTo(e.latlng, map.getZoom());
           const radius = e.accuracy;
           const circle = L.circle(e.latlng, radius);
           circle.addTo(map);
-          // @typescript-eslint/no-explicit-any
-          setBbox(e.bounds.toBBoxString().split(',') as any);
+          setBbox((e.bounds as LatLngBounds).toBBoxString().split(','));
         });
       }
     }, [map]);
 
     return position === null ? null : (
-      // @typescript-eslint/no-explicit-any
-      <Marker position={position as any}>
+      <Marker position={position}>
         <Popup>
           You are here. <br />
           Map bbox: <br />
