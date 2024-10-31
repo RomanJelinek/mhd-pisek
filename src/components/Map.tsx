@@ -1,67 +1,62 @@
 'use client';
 
-import React, { FC, useEffect, useState } from 'react';
-import { MapContainer, Marker, Popup, TileLayer, useMap } from 'react-leaflet';
+import React, { useEffect, useState } from 'react';
+import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
+import 'leaflet/dist/leaflet.css';
+import 'leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css';
+import 'leaflet-defaulticon-compatibility';
+import L from 'leaflet';
 
-const MyLocationMarker: FC = () => {
-  const [position, setPosition] = useState<[number, number] | null>(null);
-  const map = useMap();
+import icon from './constants';
 
-  useEffect(() => {
-    if (navigator.geolocation) {
-      console.log(navigator.geolocation);
-      const watchId = navigator.geolocation.watchPosition(
-        (pos) => {
-          console.log(pos);
-          const newPosition: [number, number] = [
-            pos.coords.latitude,
-            pos.coords.longitude,
-          ];
-          setPosition(newPosition);
-          map.setView(newPosition); // Posun mapy na aktuální pozici uživatele
-        },
-        (error) => {
-          console.error('Chyba při získávání polohy:', error);
-        },
-        {
-          enableHighAccuracy: true,
-          timeout: 5000,
-          maximumAge: 0,
-        }
-      );
+export default function App() {
+  function LocationMarker() {
+    const [position, setPosition] = useState(null);
+    const [bbox, setBbox] = useState([]);
 
-      // Vyčistit sledování polohy při odpojení komponenty
-      return () => navigator.geolocation.clearWatch(watchId);
-    } else {
-      console.error('Geolokace není ve vašem prohlížeči podporována.');
-    }
-  }, [map]);
+    const map = useMap();
 
-  console.log(position);
+    useEffect(() => {
+      if (typeof window !== 'undefined') {
+        map.locate().on('locationfound', function (e) {
+          setPosition(e.latlng as any);
+          map.flyTo(e.latlng, map.getZoom());
+          const radius = e.accuracy;
+          const circle = L.circle(e.latlng, radius);
+          circle.addTo(map);
+          setBbox(e.bounds.toBBoxString().split(',') as any);
+        });
+      }
+    }, [map]);
 
-  return position === null ? null : (
-    <Marker position={position}>
-      <Popup>Vaše aktuální poloha</Popup>
-    </Marker>
-  );
-};
+    return position === null ? null : (
+      <Marker position={position as any}>
+        <Popup>
+          You are here. <br />
+          Map bbox: <br />
+          <b>Southwest lng</b>: {bbox[0]} <br />
+          <b>Southwest lat</b>: {bbox[1]} <br />
+          <b>Northeast lng</b>: {bbox[2]} <br />
+          <b>Northeast lat</b>: {bbox[3]}
+        </Popup>
+      </Marker>
+    );
+  }
 
-const Map: FC = () => {
   return (
     <MapContainer
-      style={{ width: '100%', height: '100vh' }}
-      center={[49.30881, 14.14722]} // Výchozí střed Písku
-      zoom={15}
-      scrollWheelZoom={true}
+      key={new Date().getTime()}
+      center={[49.1951, 16.6068]}
+      zoom={13}
+      scrollWheelZoom
+      style={{ height: '100vh' }}
     >
       <TileLayer
-        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
-      <MyLocationMarker /> {/* Sledování a zobrazení aktuální polohy */}
+      <LocationMarker />
     </MapContainer>
   );
-};
-
-export default Map;
+}
