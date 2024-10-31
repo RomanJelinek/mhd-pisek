@@ -18,17 +18,20 @@ export default function App() {
     useEffect(() => {
       if (typeof window !== 'undefined') {
         map.locate().on('locationfound', function (e) {
+          // @typescript-eslint/no-explicit-any
           setPosition(e.latlng as any);
           map.flyTo(e.latlng, map.getZoom());
           const radius = e.accuracy;
           const circle = L.circle(e.latlng, radius);
           circle.addTo(map);
+          // @typescript-eslint/no-explicit-any
           setBbox(e.bounds.toBBoxString().split(',') as any);
         });
       }
     }, [map]);
 
     return position === null ? null : (
+      // @typescript-eslint/no-explicit-any
       <Marker position={position as any}>
         <Popup>
           You are here. <br />
