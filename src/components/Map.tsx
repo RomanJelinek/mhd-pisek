@@ -34,7 +34,6 @@ export default function App() {
           }
         );
 
-        // Vyčištění watchPosition při odpojení komponenty
         return () => navigator.geolocation.clearWatch(watchId);
       }
     }, [map]);
