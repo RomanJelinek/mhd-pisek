@@ -8,8 +8,6 @@ import 'leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility
 import 'leaflet-defaulticon-compatibility';
 import L from 'leaflet';
 
-import icon from './constants';
-
 export default function App() {
   function LocationMarker() {
     const [position, setPosition] = useState(null);
