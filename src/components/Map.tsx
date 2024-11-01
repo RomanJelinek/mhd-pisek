@@ -98,7 +98,9 @@ export default function App() {
         maxZoom={18}
         minZoom={18}
         dragging={false}
-        scrollWheelZoom
+        doubleClickZoom={false}
+        scrollWheelZoom={false}
+        touchZoom={false}
         style={{ height: '100vh' }}
       >
         <TileLayer
