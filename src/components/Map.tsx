@@ -6,9 +6,11 @@ import 'leaflet/dist/leaflet.css';
 import 'leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css';
 import 'leaflet-defaulticon-compatibility';
 import L, { LatLng } from 'leaflet';
+import Modal from './Modal';
 
 export default function App() {
   const targetPosition = new L.LatLng(49.30981, 14.14722);
+  const [showModal, setShowModal] = useState(false);
 
   function LocationMarker() {
     const [position, setPosition] = useState<LatLng | null>(
@@ -16,6 +18,7 @@ export default function App() {
     );
     const map = useMap();
 
+    // geolocation feature
     // useEffect(() => {
     //   console.log('watching');
     //   if (typeof window !== 'undefined' && navigator.geolocation) {
@@ -42,7 +45,6 @@ export default function App() {
     //     return () => navigator.geolocation.clearWatch(watchId);
     //   }
     // }, [map]);
-
     useEffect(() => {
       const handleKeyPress = (event: KeyboardEvent) => {
         if (position) {
@@ -51,16 +53,16 @@ export default function App() {
 
           switch (event.key) {
             case 'ArrowUp':
-              newLat += 0.001;
+              newLat += 0.0001;
               break;
             case 'ArrowDown':
-              newLat -= 0.001;
+              newLat -= 0.0001;
               break;
             case 'ArrowLeft':
-              newLng -= 0.001;
+              newLng -= 0.0001;
               break;
             case 'ArrowRight':
-              newLng += 0.001;
+              newLng += 0.0001;
               break;
             default:
               return;
@@ -71,8 +73,8 @@ export default function App() {
           map.flyTo(newPosition, map.getZoom());
 
           const distance = newPosition.distanceTo(targetPosition);
-          if (distance < 50) {
-            alert('Došli jste k cílovému bodu!');
+          if (distance < 10) {
+            setShowModal(true);
           }
         }
       };
@@ -89,23 +91,27 @@ export default function App() {
   }
 
   return (
-    <MapContainer
-      center={[49.30881, 14.14722]}
-      zoom={18}
-      maxZoom={18}
-      minZoom={15}
-      dragging={false}
-      scrollWheelZoom
-      style={{ height: '100vh' }}
-    >
-      <TileLayer
-        attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-      />
-      <LocationMarker />
-      <Marker position={targetPosition}>
-        <Popup>Cílový bod</Popup>
-      </Marker>
-    </MapContainer>
+    <>
+      <MapContainer
+        center={[49.30881, 14.14722]}
+        zoom={18}
+        maxZoom={18}
+        minZoom={18}
+        dragging={false}
+        scrollWheelZoom
+        style={{ height: '100vh' }}
+      >
+        <TileLayer
+          attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+        />
+        <LocationMarker />
+        <Marker position={targetPosition}>
+          <Popup>Cílový bod</Popup>
+        </Marker>
+      </MapContainer>
+
+      <Modal isOpen={showModal} onClose={() => setShowModal(false)} />
+    </>
   );
 }
