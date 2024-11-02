@@ -5,34 +5,47 @@ import {
   DialogContent,
   DialogContentText,
   DialogTitle,
+  Box,
 } from '@mui/material';
+import { ReactNode } from 'react';
 
-const CustomDialog = ({
-  isOpen,
+export interface ModalProps {
+  isOpen?: boolean;
+  onClose?: () => void;
+  title?: string;
+  content?: ReactNode;
+}
+
+const Modal = ({
+  isOpen = false,
   onClose,
-}: {
-  isOpen: boolean;
-  onClose: () => void;
-}) => {
+  title = '',
+  content = '',
+}: ModalProps) => {
   return (
-    <Dialog open={isOpen} onClose={onClose} fullWidth maxWidth="sm">
-      <DialogTitle>Dialog Title</DialogTitle>
-      <DialogContent>
-        <DialogContentText>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </DialogContentText>
-      </DialogContent>
-      <DialogActions>
-        <Button onClick={onClose} variant="outlined">
-          Cancel
-        </Button>
-        <Button onClick={onClose} variant="contained" color="primary">
-          Save
-        </Button>
-      </DialogActions>
+    <Dialog open={isOpen} onClose={onClose} fullWidth maxWidth="sm" fullScreen>
+      <Box
+        display="flex"
+        flexDirection="column"
+        justifyContent="center"
+        alignItems="center"
+      >
+        <DialogTitle>{title}</DialogTitle>
+        <DialogContent>
+          {typeof content === 'string' ? (
+            <DialogContentText>{content}</DialogContentText>
+          ) : (
+            content
+          )}
+        </DialogContent>
+        <DialogActions>
+          <Button onClick={onClose} variant="contained" color="primary">
+            Splnit
+          </Button>
+        </DialogActions>
+      </Box>
     </Dialog>
   );
 };
 
-export default CustomDialog;
+export default Modal;

@@ -25,7 +25,7 @@ export default function Page() {
   return (
     <DynamicLocationProvider>
       <ModalProvider>
-        <ProgressProvider>
+        <ProgressProvider maxSteps={5}>
           <Map />
         </ProgressProvider>
       </ModalProvider>
