@@ -2,6 +2,7 @@ import CircularProgress from '@mui/material/CircularProgress';
 import dynamic from 'next/dynamic';
 import React, { useMemo } from 'react';
 import { ModalProvider } from '@/context/ModalContext';
+import { ProgressProvider } from '@/context/ProgressContext';
 
 export default function Page() {
   const DynamicLocationProvider = useMemo(
@@ -24,7 +25,9 @@ export default function Page() {
   return (
     <DynamicLocationProvider>
       <ModalProvider>
-        <Map />
+        <ProgressProvider>
+          <Map />
+        </ProgressProvider>
       </ModalProvider>
     </DynamicLocationProvider>
   );
