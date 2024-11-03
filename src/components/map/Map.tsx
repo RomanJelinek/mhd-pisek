@@ -6,19 +6,19 @@ import 'leaflet/dist/leaflet.css';
 import 'leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css';
 import 'leaflet-defaulticon-compatibility';
 import LocationMarker from './LocationMarker';
-import { progressData } from '../../game_data/constants';
+import { progressData } from '@/game_data/constants';
 import Modal from '../Modal';
 import { useModal } from '@/context/ModalContext';
 import { useLocation } from '@/context/LocationContext';
 import { useProgress } from '@/context/ProgressContext';
+import { ArrowMarker } from "@/components/markers";
 
 const Map = () => {
   const { position } = useLocation();
   const { isModalOpen, openModal, closeModal } = useModal();
   const { currentStep, nextStep } = useProgress();
 
-  const { goalPosition } = progressData[currentStep] || {};
-  const { modalContent } = progressData[currentStep] || {};
+  const { goalPosition, modalContent, arrows } = progressData[currentStep] || {};
 
   const handleCloseModal = () => {
     nextStep();
@@ -32,7 +32,7 @@ const Map = () => {
         openModal();
       }
     }
-  }, [position]);
+  }, [goalPosition, isModalOpen, openModal, position]);
 
   return (
     <>
@@ -53,6 +53,7 @@ const Map = () => {
         <Marker position={goalPosition}>
           <Popup>Cílový bod</Popup>
         </Marker>
+        {arrows?.map((arrow, i) => <ArrowMarker key={i} position={[arrow.lat, arrow.lon]} rotation={arrow.angle} />)}
       </MapContainer>
 
       <Modal
