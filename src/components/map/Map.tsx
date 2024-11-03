@@ -11,14 +11,15 @@ import Modal from '../Modal';
 import { useModal } from '@/context/ModalContext';
 import { useLocation } from '@/context/LocationContext';
 import { useProgress } from '@/context/ProgressContext';
-import { ArrowMarker } from "@/components/markers";
+import { ArrowMarker, RotatableMarker } from '@/components/markers';
 
 const Map = () => {
   const { position } = useLocation();
   const { isModalOpen, openModal, closeModal } = useModal();
   const { currentStep, nextStep } = useProgress();
 
-  const { goalPosition, modalContent, arrows } = progressData[currentStep] || {};
+  const { goalPosition, modalContent, arrows } =
+    progressData[currentStep] || {};
 
   const handleCloseModal = () => {
     nextStep();
@@ -53,7 +54,14 @@ const Map = () => {
         <Marker position={goalPosition}>
           <Popup>Cílový bod</Popup>
         </Marker>
-        {arrows?.map((arrow, i) => <ArrowMarker key={i} position={[arrow.lat, arrow.lon]} rotation={arrow.angle} />)}
+        <RotatableMarker position={[49.30981, 14.14722]} />
+        {arrows?.map((arrow, i) => (
+          <ArrowMarker
+            key={i}
+            position={[arrow.lat, arrow.lon]}
+            rotation={arrow.angle}
+          />
+        ))}
       </MapContainer>
 
       <Modal
