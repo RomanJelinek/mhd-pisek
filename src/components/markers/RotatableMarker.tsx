@@ -2,7 +2,9 @@ import L from 'leaflet';
 import { useEffect, useState, useRef, useCallback } from 'react';
 import { Marker, useMap } from 'react-leaflet';
 import fastForward from './fast-forward.png';
-import { Box, Button, styled, Typography } from '@mui/material';
+import { Box, Button } from '@mui/material';
+import RotateRightIcon from '@mui/icons-material/RotateRight';
+import RotateLeftIcon from '@mui/icons-material/RotateLeft';
 
 type RotatableMarkerProps = {
   position: [number, number];
@@ -108,20 +110,20 @@ export const RotatableMarker = ({
         <Button
           size="small"
           variant="contained"
-          onMouseDown={rotateCounterClockwise}
-          onMouseUp={stopRotation}
-          onMouseLeave={stopRotation}
-        >
-          <Typography fontSize={20}>⟳</Typography>
-        </Button>
-        <Button
-          size="small"
-          variant="contained"
           onMouseDown={rotateClockwise}
           onMouseUp={stopRotation}
           onMouseLeave={stopRotation}
         >
-          <Typography fontSize={20}>⟳</Typography>
+          <RotateRightIcon />
+        </Button>
+        <Button
+          size="small"
+          variant="contained"
+          onMouseDown={rotateCounterClockwise}
+          onMouseUp={stopRotation}
+          onMouseLeave={stopRotation}
+        >
+          <RotateLeftIcon />
         </Button>
       </Box>
     </>
