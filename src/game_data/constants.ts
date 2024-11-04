@@ -1,5 +1,5 @@
 import L from 'leaflet';
-import { ModalProps } from '../components/Modal';
+import { ModalContent } from '../components/Modal';
 
 export default L.icon({
   iconSize: [25, 41],
@@ -12,28 +12,28 @@ export default L.icon({
 type Arrow = {
   lat: number;
   lon: number;
-  angle: number
-}
+  angle: number;
+};
 
 export const progressData: Record<
   number,
-  { goalPosition: L.LatLng; modalContent: ModalProps; arrows?: Arrow[] }
+  { goalPosition: L.LatLng; modalContent: ModalContent; arrows?: Arrow[] }
 > = {
   1: {
     goalPosition: new L.LatLng(49.30981, 14.14822),
     modalContent: { title: 'Prvni ukol' },
     arrows: [
-        {
+      {
         lat: 49.30922504167442,
         lon: 14.147300720214846,
-        angle: -121
+        angle: -121,
       },
       {
         lat: 49.31023230376856,
         lon: 14.146603345870973,
-        angle: 17
-      }
-    ]
+        angle: 17,
+      },
+    ],
   },
   2: {
     goalPosition: new L.LatLng(49.30981, 14.14922),

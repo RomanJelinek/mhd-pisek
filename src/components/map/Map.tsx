@@ -1,39 +1,46 @@
-'use client';
+"use client";
 
-import React, { useEffect } from 'react';
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
-import 'leaflet/dist/leaflet.css';
-import 'leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css';
-import 'leaflet-defaulticon-compatibility';
-import LocationMarker from './LocationMarker';
-import { progressData } from '@/game_data/constants';
-import Modal from '../Modal';
-import { useModal } from '@/context/ModalContext';
-import { useLocation } from '@/context/LocationContext';
-import { useProgress } from '@/context/ProgressContext';
-import { ArrowMarker, RotatableMarker } from '@/components/markers';
+import React, { useEffect } from "react";
+import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import "leaflet/dist/leaflet.css";
+import "leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css";
+import "leaflet-defaulticon-compatibility";
+import LocationMarker from "./LocationMarker";
+import { progressData } from "@/game_data/constants";
+import { useLocation } from "@/context/LocationContext";
+import { useProgress } from "@/context/ProgressContext";
+import { ArrowMarker } from "@/components/markers";
+import Modal from "../Modal";
+import { useModalControl } from "@/hooks/useModalControl";
 
 const Map = () => {
   const { position } = useLocation();
-  const { isModalOpen, openModal, closeModal } = useModal();
   const { currentStep, nextStep } = useProgress();
+  const { modalState, openModal, closeModal } = useModalControl();
 
   const { goalPosition, modalContent, arrows } =
     progressData[currentStep] || {};
 
   const handleCloseModal = () => {
-    nextStep();
     closeModal();
+    nextStep();
   };
 
   useEffect(() => {
     if (position) {
       const distance = position.distanceTo(goalPosition);
-      if (distance < 5 && !isModalOpen) {
-        openModal();
+      if (distance < 5 && !modalState.isOpen) {
+        openModal(modalContent.title, modalContent?.content);
       }
     }
-  }, [goalPosition, isModalOpen, openModal, position]);
+  }, [
+    goalPosition,
+    modalContent?.content,
+    modalContent.title,
+    modalState.isOpen,
+    openModal,
+    position,
+  ]);
 
   return (
     <>
@@ -44,7 +51,7 @@ const Map = () => {
         doubleClickZoom={false}
         scrollWheelZoom={false}
         touchZoom={false}
-        style={{ height: '100vh' }}
+        style={{ height: "100vh" }}
       >
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -54,7 +61,6 @@ const Map = () => {
         <Marker position={goalPosition}>
           <Popup>Cílový bod</Popup>
         </Marker>
-        {/*<RotatableMarker position={[49.30981, 14.14722]} />*/}
         {arrows?.map((arrow, i) => (
           <ArrowMarker
             key={i}
@@ -64,9 +70,9 @@ const Map = () => {
         ))}
       </MapContainer>
       <Modal
-        isOpen={isModalOpen}
+        modalContent={{ title: modalState.title }}
+        isOpen={modalState.isOpen}
         onClose={handleCloseModal}
-        {...modalContent}
       />
     </>
   );
