@@ -1,21 +1,9 @@
-import {
-  Button,
-  Dialog,
-  DialogActions,
-  DialogContent,
-  DialogContentText,
-  DialogTitle,
-  Box,
-} from '@mui/material';
-
-export interface ModalContent {
-  title: string;
-  content?: string;
-}
+import { Button, Dialog, DialogActions, Box } from '@mui/material';
+import { ReactNode } from 'react';
 
 export interface ModalProps {
   isOpen: boolean;
-  modalContent: ModalContent;
+  modalContent: ReactNode;
   onClose: () => void;
 }
 
@@ -27,11 +15,11 @@ const Modal = ({ isOpen, modalContent, onClose }: ModalProps) => {
         flexDirection="column"
         justifyContent="center"
         alignItems="center"
+        paddingY={4}
+        paddingX={2}
+        gap={2}
       >
-        <DialogTitle>{modalContent.title}</DialogTitle>
-        <DialogContent>
-          <DialogContentText>{modalContent.content}</DialogContentText>
-        </DialogContent>
+        {modalContent}
         <DialogActions>
           <Button onClick={onClose} variant="contained" color="primary">
             Splnit

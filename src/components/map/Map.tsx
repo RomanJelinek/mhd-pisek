@@ -12,14 +12,17 @@ import { useProgress } from '@/context/ProgressContext';
 import { ArrowMarker } from '@/components/markers';
 import Modal from '../Modal';
 import { useModalControl } from '@/hooks/useModalControl';
+import { resolveModules } from '@/utils/resolveModules';
 
 const Map = () => {
   const { position } = useLocation();
   const { currentStep, nextStep } = useProgress();
   const { modalState, openModal, closeModal } = useModalControl();
 
-  const { goalPosition, modalContent, arrows } =
+  const { goalPosition, modalModules, arrows } =
     progressData[currentStep] || {};
+
+  const modalContent = resolveModules(modalModules);
 
   const handleCloseModal = () => {
     closeModal();
@@ -30,7 +33,7 @@ const Map = () => {
     if (position) {
       const distance = position.distanceTo(goalPosition);
       if (distance < 5 && !modalState.isOpen) {
-        openModal(modalContent.title, modalContent?.content);
+        openModal(modalContent);
       }
     }
   }, [goalPosition, position]);
@@ -63,7 +66,7 @@ const Map = () => {
         ))}
       </MapContainer>
       <Modal
-        modalContent={{ title: modalState.title }}
+        modalContent={modalContent}
         isOpen={modalState.isOpen}
         onClose={handleCloseModal}
       />
