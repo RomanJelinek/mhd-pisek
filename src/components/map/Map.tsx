@@ -54,7 +54,7 @@ const Map = () => {
         <Marker position={goalPosition}>
           <Popup>Cílový bod</Popup>
         </Marker>
-        <RotatableMarker position={[49.30981, 14.14722]} />
+        {/*<RotatableMarker position={[49.30981, 14.14722]} />*/}
         {arrows?.map((arrow, i) => (
           <ArrowMarker
             key={i}
@@ -63,7 +63,6 @@ const Map = () => {
           />
         ))}
       </MapContainer>
-
       <Modal
         isOpen={isModalOpen}
         onClose={handleCloseModal}

@@ -1,10 +1,10 @@
-import L from 'leaflet';
-import { useEffect, useState, useRef, useCallback } from 'react';
-import { Marker, useMap } from 'react-leaflet';
-import fastForward from './fast-forward.png';
-import { Box, Button } from '@mui/material';
-import RotateRightIcon from '@mui/icons-material/RotateRight';
-import RotateLeftIcon from '@mui/icons-material/RotateLeft';
+import L from "leaflet";
+import { useEffect, useState, useRef, useCallback } from "react";
+import { Marker, useMap } from "react-leaflet";
+import fastForward from "./images/fast-forward.png";
+import { Box, Button } from "@mui/material";
+import RotateRightIcon from "@mui/icons-material/RotateRight";
+import RotateLeftIcon from "@mui/icons-material/RotateLeft";
 
 type RotatableMarkerProps = {
   position: [number, number];
@@ -18,7 +18,7 @@ export const RotatableMarker = ({
   const map = useMap();
   const [angle, setAngle] = useState(rotation ?? 0);
   const [markerPos, setMarkerPos] = useState<L.LatLng>(
-    new L.LatLng(position[0], position[1])
+    new L.LatLng(position[0], position[1]),
   );
   const buttonContainerRef = useRef<HTMLDivElement | null>(null);
   const markerRef = useRef<L.Marker | null>(null);
@@ -26,7 +26,7 @@ export const RotatableMarker = ({
 
   // Custom Icon for the marker with the image rotated according to the angle
   const icon = L.divIcon({
-    className: 'custom-arrow-marker',
+    className: "custom-arrow-marker",
     html: `
             <div style="transform: rotate(${angle}deg);">
                 <img src="${fastForward.src}" width="32" height="32" />
@@ -50,9 +50,9 @@ export const RotatableMarker = ({
 
   useEffect(() => {
     updateButtonContainerPosition();
-    map.on('zoom move', updateButtonContainerPosition);
+    map.on("zoom move", updateButtonContainerPosition);
     return () => {
-      map.off('zoom move', updateButtonContainerPosition);
+      map.off("zoom move", updateButtonContainerPosition);
     };
   }, [map, markerPos, updateButtonContainerPosition]);
 
