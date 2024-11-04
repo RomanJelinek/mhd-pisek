@@ -7,36 +7,30 @@ import {
   DialogTitle,
   Box,
 } from '@mui/material';
-import { ReactNode } from 'react';
 
-export interface ModalProps {
-  isOpen?: boolean;
-  onClose?: () => void;
-  title?: string;
-  content?: ReactNode;
+export interface ModalContent {
+  title: string;
+  content?: string;
 }
 
-const Modal = ({
-  isOpen = false,
-  onClose,
-  title = '',
-  content = '',
-}: ModalProps) => {
+export interface ModalProps {
+  isOpen: boolean;
+  modalContent: ModalContent;
+  onClose: () => void;
+}
+
+const Modal = ({ isOpen, modalContent, onClose }: ModalProps) => {
   return (
-    <Dialog open={isOpen} onClose={onClose} fullWidth maxWidth="sm" fullScreen>
+    <Dialog open={isOpen} fullWidth maxWidth="sm" fullScreen>
       <Box
         display="flex"
         flexDirection="column"
         justifyContent="center"
         alignItems="center"
       >
-        <DialogTitle>{title}</DialogTitle>
+        <DialogTitle>{modalContent.title}</DialogTitle>
         <DialogContent>
-          {typeof content === 'string' ? (
-            <DialogContentText>{content}</DialogContentText>
-          ) : (
-            content
-          )}
+          <DialogContentText>{modalContent.content}</DialogContentText>
         </DialogContent>
         <DialogActions>
           <Button onClick={onClose} variant="contained" color="primary">
