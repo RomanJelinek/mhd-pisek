@@ -1,7 +1,8 @@
+import { ProgressProvider } from '@/context/ProgressContext';
 import CircularProgress from '@mui/material/CircularProgress';
 import dynamic from 'next/dynamic';
-import React, { useMemo } from 'react';
-import { ProgressProvider } from '@/context/ProgressContext';
+import Link from 'next/link';
+import { useMemo } from 'react';
 
 export default function Page() {
   const DynamicLocationProvider = useMemo(
@@ -10,7 +11,7 @@ export default function Page() {
         loading: () => <CircularProgress />,
         ssr: false,
       }),
-    []
+    [],
   );
   const Map = useMemo(
     () =>
@@ -18,12 +19,13 @@ export default function Page() {
         loading: () => <CircularProgress />,
         ssr: false,
       }),
-    []
+    [],
   );
 
   return (
     <DynamicLocationProvider>
       <ProgressProvider maxSteps={5}>
+        <Link href="/profile">Profile</Link>
         <Map />
       </ProgressProvider>
     </DynamicLocationProvider>

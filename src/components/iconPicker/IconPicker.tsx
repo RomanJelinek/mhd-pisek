@@ -15,6 +15,7 @@ import {
   useMediaQuery,
   useTheme,
 } from '@mui/material';
+import Link from 'next/link';
 import React, { useState } from 'react';
 
 const emojiOptions = ['😀', '🚀', '🐶', '🌈', '👑', '🍕', '🌍', '⚽️'];
@@ -38,6 +39,7 @@ const IconPicker = () => {
 
   return (
     <Container maxWidth="sm" sx={{ my: 4 }}>
+      <Link href="/">Dashboard</Link>
       <Typography variant="h4" align="center" gutterBottom>
         Vyber si sveho avatara!
       </Typography>
