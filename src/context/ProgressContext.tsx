@@ -1,6 +1,6 @@
 'use client';
 
-import React, { createContext, useContext, useState, ReactNode } from 'react';
+import { createContext, ReactNode, useContext, useState } from 'react';
 
 interface ProgressContextProps {
   currentStep: number;
@@ -10,8 +10,9 @@ interface ProgressContextProps {
   maxSteps: number;
 }
 
-const ProgressContext =
-  createContext<ProgressContextProps | undefined>(undefined);
+const ProgressContext = createContext<ProgressContextProps | undefined>(
+  undefined,
+);
 
 export const ProgressProvider = ({
   children,

@@ -1,11 +1,12 @@
-import React, { useMemo } from "react";
-import dynamic from "next/dynamic";
-import CircularProgress from "@mui/material/CircularProgress";
+import { ProgressProvider } from '@/context/ProgressContext';
+import CircularProgress from '@mui/material/CircularProgress';
+import dynamic from 'next/dynamic';
+import { useMemo } from 'react';
 
 export default function Profile() {
   const DynamicLocationProvider = useMemo(
     () =>
-      dynamic(() => import("@/context/LocationContext"), {
+      dynamic(() => import('@/context/LocationContext'), {
         loading: () => <CircularProgress />,
         ssr: false,
       }),
@@ -14,7 +15,7 @@ export default function Profile() {
 
   const IconPicker = useMemo(
     () =>
-      dynamic(() => import("@/components/iconPicker/IconPicker"), {
+      dynamic(() => import('@/components/preGame/PreGame'), {
         loading: () => <CircularProgress />,
         ssr: false,
       }),
@@ -23,7 +24,7 @@ export default function Profile() {
 
   const ProfileMap = useMemo(
     () =>
-      dynamic(() => import("@/components/map/ProfileMap"), {
+      dynamic(() => import('@/components/map/ProfileMap'), {
         loading: () => <CircularProgress />,
         ssr: false,
       }),
@@ -32,8 +33,10 @@ export default function Profile() {
 
   return (
     <DynamicLocationProvider>
-      <IconPicker />
-      <ProfileMap />
+      <ProgressProvider maxSteps={5}>
+        <IconPicker />
+        <ProfileMap />
+      </ProgressProvider>
     </DynamicLocationProvider>
   );
 }

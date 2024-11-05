@@ -1,11 +1,11 @@
-"use client";
+'use client';
 
-import L from "leaflet";
-import { useEffect } from "react";
-import { useMap } from "react-leaflet";
-import { useLocation } from "@/context/LocationContext";
-import { UserMarker } from "@/components";
-import {useUser} from "@/context/UserContext";
+import { UserMarker } from '@/components';
+import { useLocation } from '@/context/LocationContext';
+import { useUser } from '@/context/UserContext';
+import L from 'leaflet';
+import { useEffect } from 'react';
+import { useMap } from 'react-leaflet';
 
 const LocationMarker = () => {
   const { position, setPosition } = useLocation();
@@ -20,16 +20,16 @@ const LocationMarker = () => {
         let newLng = position.lng;
 
         switch (event.key) {
-          case "ArrowUp":
+          case 'ArrowUp':
             newLat += 0.0001;
             break;
-          case "ArrowDown":
+          case 'ArrowDown':
             newLat -= 0.0001;
             break;
-          case "ArrowLeft":
+          case 'ArrowLeft':
             newLng -= 0.0001;
             break;
-          case "ArrowRight":
+          case 'ArrowRight':
             newLng += 0.0001;
             break;
           default:
@@ -41,15 +41,12 @@ const LocationMarker = () => {
         map.flyTo(newPosition, map.getZoom());
       }
     };
-    window.addEventListener("keydown", handleKeyPress);
-    return () => window.removeEventListener("keydown", handleKeyPress);
+    window.addEventListener('keydown', handleKeyPress);
+    return () => window.removeEventListener('keydown', handleKeyPress);
   }, [position, map, setPosition]);
 
   return position ? (
-    <UserMarker
-      position={[position.lat, position.lng]}
-      userIconType={icon}
-    />
+    <UserMarker position={[position.lat, position.lng]} userIconType={icon} />
   ) : null;
 };
 

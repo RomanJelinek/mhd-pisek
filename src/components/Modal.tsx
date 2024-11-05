@@ -1,4 +1,4 @@
-import { Button, Dialog, DialogActions, Box } from '@mui/material';
+import { Box, Button, Dialog, DialogActions } from '@mui/material';
 import { ReactNode } from 'react';
 
 export type ModalProps = {

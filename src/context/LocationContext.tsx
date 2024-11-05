@@ -1,19 +1,20 @@
 'use client';
 
-import React, { createContext, useContext, useState, ReactNode } from 'react';
 import L, { LatLng } from 'leaflet';
+import { createContext, ReactNode, useContext, useState } from 'react';
 
 interface LocationContextProps {
   position: LatLng | null;
   setPosition: (position: LatLng) => void;
 }
 
-const LocationContext =
-  createContext<LocationContextProps | undefined>(undefined);
+const LocationContext = createContext<LocationContextProps | undefined>(
+  undefined,
+);
 
 export const LocationProvider = ({ children }: { children: ReactNode }) => {
   const [position, setPosition] = useState<LatLng | null>(
-    new L.LatLng(49.30881, 14.14722)
+    new L.LatLng(49.30881, 14.14722),
   );
 
   return (
