@@ -1,0 +1,14 @@
+{
+  "trailingComma": "all",
+  "singleQuote": true,
+  "endOfLine": "auto",
+  "overrides": [
+    {
+      "files": ".editorconfig",
+      "options": {
+        "parser": "yaml"
+      }
+    }
+  ],
+  "plugins": ["prettier-plugin-organize-imports"]
+}

@@ -5,9 +5,11 @@ import { useEffect } from "react";
 import { useMap } from "react-leaflet";
 import { useLocation } from "@/context/LocationContext";
 import { UserMarker } from "@/components";
+import {useUser} from "@/context/UserContext";
 
 const LocationMarker = () => {
   const { position, setPosition } = useLocation();
+  const { icon } = useUser();
   const map = useMap();
 
   useEffect(() => {
@@ -46,7 +48,7 @@ const LocationMarker = () => {
   return position ? (
     <UserMarker
       position={[position.lat, position.lng]}
-      userIconType={"footprint"}
+      userIconType={icon}
     />
   ) : null;
 };

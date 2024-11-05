@@ -1,0 +1,4 @@
+{
+  "*.ts*": ["pnpm format", "next lint"],
+  "*.js*": ["pnpm format", "next lint"]
+}

@@ -1,4 +1,7 @@
+import CircularProgress from '@mui/material/CircularProgress';
 import type { Metadata } from 'next';
+import dynamic from 'next/dynamic';
+import React, { useMemo } from 'react';
 import './globals.css';
 
 export const metadata: Metadata = {
@@ -11,9 +14,20 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const UserProvider = useMemo(
+    () =>
+      dynamic(() => import('@/context/UserContext'), {
+        loading: () => <CircularProgress />,
+        ssr: false,
+      }),
+    [],
+  );
+
   return (
     <html lang="cs">
-      <body>{children}</body>
+      <body>
+        <UserProvider>{children}</UserProvider>
+      </body>
     </html>
   );
 }
