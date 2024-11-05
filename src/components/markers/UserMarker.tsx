@@ -1,36 +1,33 @@
+"use client";
+
 import { Marker } from "react-leaflet";
-import L, { LatLng } from "leaflet";
-import footprints from "./images/footprints.png";
+import L from "leaflet";
 import { ReactNode } from "react";
 
 type UserMarkerProps = {
-  position: LatLng;
-  userIconType: UserIconType;
+  position: [number, number];
+  userIconType: string;
   children?: ReactNode;
 };
 
-type UserIconType = "adventurer" | "vehicle" | "animal" | "footprint";
-
-const userIconMap = new Map<UserIconType, string>([
-  ["footprint", footprints.src],
-  ["vehicle", ""],
-  ["adventurer", ""],
-  ["animal", ""],
-]);
-
 export const UserMarker = ({
+  children,
   position,
   userIconType,
-  children,
 }: UserMarkerProps) => {
-  const icon = L.icon({
-    iconUrl: userIconMap.get(userIconType) ?? "",
+  const icon = L.divIcon({
+    className: "",
+    html: `<span style="font-size: 40px">${userIconType}</span>`,
     iconSize: [32, 32],
     iconAnchor: [16, 16],
   });
 
   return (
-    <Marker position={position} icon={icon}>
+    <Marker
+      position={new L.LatLng(position[0], position[1])}
+      icon={icon}
+      draggable
+    >
       {children}
     </Marker>
   );

@@ -44,7 +44,10 @@ const LocationMarker = () => {
   }, [position, map, setPosition]);
 
   return position ? (
-    <UserMarker position={position} userIconType={"footprint"} />
+    <UserMarker
+      position={[position.lat, position.lng]}
+      userIconType={"footprint"}
+    />
   ) : null;
 };
 
