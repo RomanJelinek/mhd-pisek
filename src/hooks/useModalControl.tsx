@@ -1,19 +1,18 @@
-import { ModalContent } from '@/components/Modal';
-import { useState } from 'react';
+import { ReactNode, useState } from 'react';
 
-interface ModalState extends ModalContent {
+interface ModalState {
   isOpen: boolean;
+  modalContent: ReactNode;
 }
 
 export const useModalControl = () => {
   const [modalState, setModalState] = useState<ModalState>({
     isOpen: false,
-    title: '',
-    content: '',
+    modalContent: <></>,
   });
 
-  const openModal = (title: string, content: string | undefined) => {
-    setModalState({ isOpen: true, title, content });
+  const openModal = (modalContent: ReactNode) => {
+    setModalState({ isOpen: true, modalContent });
   };
 
   const closeModal = () => setModalState({ ...modalState, isOpen: false });

@@ -1,5 +1,5 @@
+import { ModalModule } from '@/components/modalModules';
 import L from 'leaflet';
-import { ModalContent } from '../components/Modal';
 
 export default L.icon({
   iconSize: [25, 41],
@@ -17,11 +17,30 @@ type Arrow = {
 
 export const progressData: Record<
   number,
-  { goalPosition: L.LatLng; modalContent: ModalContent; arrows?: Arrow[] }
+  { goalPosition: L.LatLng; modalModules: ModalModule[]; arrows?: Arrow[] }
 > = {
   1: {
     goalPosition: new L.LatLng(49.30981, 14.14822),
-    modalContent: { title: 'Prvni ukol' },
+    modalModules: [
+      {
+        module: 'question',
+        moduleProps: {
+          question: 'Kdo prebehl most prvni?',
+          options: [
+            { value: 1, label: 'Jelen' },
+            { value: 2, label: 'Liska' },
+            { value: 3, label: 'Mottl' },
+          ],
+        },
+      },
+      {
+        module: 'perex',
+        moduleProps: {
+          content:
+            'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis risus. Etiam ligula pede, sagittis quis, interdum ultricies, scelerisque eu. Nulla non lectus sed nisl molestie malesuada. Et harum quidem rerum facilis est et expedita distinctio. Quisque tincidunt scelerisque libero. Nam sed tellus id magna elementum tincidunt. Aliquam ornare wisi eu metus. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Nulla non lectus sed nisl molestie malesuada. Duis risus. Nam quis nulla. Aenean id metus id velit ullamcorper pulvinar. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Ut tempus purus at lorem.',
+        },
+      },
+    ],
     arrows: [
       {
         lat: 49.30922504167442,
@@ -37,18 +56,18 @@ export const progressData: Record<
   },
   2: {
     goalPosition: new L.LatLng(49.30981, 14.14922),
-    modalContent: { title: 'Druhy ukol' },
+    modalModules: [],
   },
   3: {
     goalPosition: new L.LatLng(49.30981, 14.14992),
-    modalContent: { title: 'Treti ukol' },
+    modalModules: [],
   },
   4: {
     goalPosition: new L.LatLng(49.30981, 14.152),
-    modalContent: { title: 'Ctvrty ukol' },
+    modalModules: [],
   },
   5: {
     goalPosition: new L.LatLng(49.30981, 14.1525),
-    modalContent: { title: 'Konec' },
+    modalModules: [],
   },
 };
