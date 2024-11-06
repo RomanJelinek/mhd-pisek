@@ -1,5 +1,4 @@
 import { ModalModule, modulesMap } from '@/components/modalModules';
-import React from 'react';
 
 export const resolveModules = (modules: ModalModule[]) => {
   return modules.map(({ module, moduleProps }, index) => {

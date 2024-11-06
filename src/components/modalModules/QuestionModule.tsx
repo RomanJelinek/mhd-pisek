@@ -1,4 +1,3 @@
-import React from 'react';
 import RadioButtonsGroup, { RadioOptions } from '../form/RadioGroup';
 
 export interface QuestionModuleProps {

@@ -3,7 +3,9 @@
 import { fetchUserData } from '@/actions/userActions';
 import {
   createContext,
+  Dispatch,
   ReactNode,
+  SetStateAction,
   useContext,
   useEffect,
   useState,
@@ -11,13 +13,16 @@ import {
 
 interface UserContextProps {
   icon: string;
-  setIcon: (icon: string) => void;
+  setIcon: Dispatch<SetStateAction<string>>;
+  nickname: string;
+  setNickname: Dispatch<SetStateAction<string>>;
 }
 
 const UserContext = createContext<UserContextProps | undefined>(undefined);
 
 export const UserProvider = ({ children }: { children: ReactNode }) => {
   const [icon, setIcon] = useState<string>('');
+  const [nickname, setNickname] = useState<string>('');
 
   useEffect(() => {
     const fetchIcon = async () => {
@@ -29,7 +34,7 @@ export const UserProvider = ({ children }: { children: ReactNode }) => {
   }, []);
 
   return (
-    <UserContext.Provider value={{ icon, setIcon }}>
+    <UserContext.Provider value={{ icon, setIcon, nickname, setNickname }}>
       {children}
     </UserContext.Provider>
   );

@@ -1,10 +1,8 @@
-import { fetchUserData } from '@/actions/userActions';
+import { ProgressProvider } from '@/context/ProgressContext';
 import CircularProgress from '@mui/material/CircularProgress';
 import dynamic from 'next/dynamic';
 
 export default async function Profile() {
-  const { icon } = await fetchUserData();
-
   const DynamicLocationProvider = dynamic(
     () => import('@/context/LocationContext'),
     {
@@ -13,13 +11,10 @@ export default async function Profile() {
     },
   );
 
-  const IconPicker = dynamic(
-    () => import('@/components/iconPicker/IconPicker'),
-    {
-      loading: () => <CircularProgress />,
-      ssr: false,
-    },
-  );
+  const IconPicker = dynamic(() => import('@/components/preGame/PreGame'), {
+    loading: () => <CircularProgress />,
+    ssr: false,
+  });
 
   const ProfileMap = dynamic(() => import('@/components/map/ProfileMap'), {
     loading: () => <CircularProgress />,
@@ -28,8 +23,10 @@ export default async function Profile() {
 
   return (
     <DynamicLocationProvider>
-      <IconPicker initialIcon={icon} />
-      <ProfileMap />
+      <ProgressProvider maxSteps={5}>
+        <IconPicker />
+        <ProfileMap />
+      </ProgressProvider>
     </DynamicLocationProvider>
   );
 }

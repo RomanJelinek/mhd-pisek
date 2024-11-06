@@ -33,7 +33,6 @@ const Map = () => {
   useEffect(() => {
     if (position) {
       const distance = position.distanceTo(goalPosition);
-      console.log(distance);
       if (distance < 20 && !modalState.isOpen) {
         openModal(modalContent);
       }
