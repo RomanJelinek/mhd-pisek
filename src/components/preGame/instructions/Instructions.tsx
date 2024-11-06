@@ -4,7 +4,7 @@ export const Instructions = () => {
   return (
     <Box p={3}>
       <Typography variant="h5" gutterBottom>
-        Vítejte v dobrodružství po Písku!
+        Pojďme na to!
       </Typography>
       <Typography variant="body1" paragraph>
         Vaše cesta začíná na <strong>Velkém náměstí</strong>. Tam, kde se
