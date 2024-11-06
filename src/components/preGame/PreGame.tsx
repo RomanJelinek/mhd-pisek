@@ -1,16 +1,16 @@
 'use client';
 
 import { useProgress } from '@/context/ProgressContext';
+import { useUser } from '@/context/UserContext';
 import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
-import { Box, Button, Container, Typography } from '@mui/material';
-import { IconPicker } from './icon-picker/IconPicker';
-import { Name } from './name/Name';
-import { useUser } from '@/context/UserContext';
-import React, { useState } from 'react';
-import { z } from 'zod';
+import { Box, Button, Container } from '@mui/material';
 import { useRouter } from 'next/navigation';
+import { useState } from 'react';
+import { z } from 'zod';
+import { IconPicker } from './icon-picker/IconPicker';
 import { Instructions } from './instructions/Instructions';
+import { Name } from './name/Name';
 
 enum PreGameSteps {
   NAME = 1,
@@ -18,8 +18,7 @@ enum PreGameSteps {
   INSTRUCTIONS = 3,
 }
 
-  const nicknameSchema = z.string().min(1, "Zadejte jméno hráče či týmu.");
-
+const nicknameSchema = z.string().min(1, 'Zadejte jméno hráče či týmu.');
 
 const PreGame = () => {
   const { currentStep, nextStep, previousStep } = useProgress();
@@ -27,12 +26,11 @@ const PreGame = () => {
   const [error, setError] = useState<string | null>(null);
   const router = useRouter();
 
-    const steps: { [key in PreGameSteps]: JSX.Element } = {
+  const steps: { [key in PreGameSteps]: JSX.Element } = {
     [PreGameSteps.NAME]: <Name error={error} />,
     [PreGameSteps.ICON_PICKER]: <IconPicker />,
     [PreGameSteps.INSTRUCTIONS]: <Instructions />,
   };
-
 
   const validateStep = () => {
     if (currentStep === PreGameSteps.NAME) {
@@ -55,8 +53,6 @@ const PreGame = () => {
       }
     }
   };
-
-
 
   return (
     <Container

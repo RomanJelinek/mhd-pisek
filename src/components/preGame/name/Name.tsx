@@ -2,7 +2,7 @@ import { useUser } from '@/context/UserContext';
 import { TextField, Typography } from '@mui/material';
 import { ChangeEvent } from 'react';
 
-export const Name = ({error}: {error: string | null}) => {
+export const Name = ({ error }: { error: string | null }) => {
   const { nickname, setNickname } = useUser();
 
   const handleSetNickname = (e: ChangeEvent<HTMLInputElement>) => {
@@ -18,9 +18,9 @@ export const Name = ({error}: {error: string | null}) => {
         Začněte tím, že zadáte jméno hráče
       </Typography>
       <TextField
-       error={!!error}
-       helperText={error}
-       fullWidth
+        error={!!error}
+        helperText={error}
+        fullWidth
         onChange={handleSetNickname}
         value={nickname}
         label="Zadej jméno hráče"

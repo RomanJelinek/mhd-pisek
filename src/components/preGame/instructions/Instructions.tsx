@@ -1,4 +1,4 @@
-import { Typography, Box } from "@mui/material";
+import { Box, Typography } from '@mui/material';
 
 export const Instructions = () => {
   return (
@@ -15,8 +15,8 @@ export const Instructions = () => {
       <Typography variant="body1" paragraph>
         Jakmile dorazíte na místo, <strong>odhalte první úkol</strong>. Ten vás
         provede prvními kroky této výpravy a nasměruje vás na další cíl. Po
-        splnění každého úkolu se objeví nové instrukce, které vás posunou
-        blíže k dalším záhadám města.
+        splnění každého úkolu se objeví nové instrukce, které vás posunou blíže
+        k dalším záhadám města.
       </Typography>
       <Typography variant="body1">
         Připravte se na zážitky plné tajemství a objevů. Dobrodružství čeká –
