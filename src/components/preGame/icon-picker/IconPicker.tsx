@@ -16,7 +16,7 @@ import { IconCard, IconWrapper, StyledAvatar } from './IconPicker.styled';
 const emojiOptions = ['😀', '🚀', '🐶', '🌈', '👑', '🍕', '🌍', '⚽️'];
 
 export const IconPicker = () => {
-  const { icon, setIcon } = useUser();
+  const { icon, setIcon , nickname} = useUser();
   const [selectedEmoji, setSelectedEmoji] = useState<string>(icon);
 
   const handleEmojiChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -27,7 +27,7 @@ export const IconPicker = () => {
   return (
     <>
       <Typography variant="h4" align="center" gutterBottom>
-        Vyber si svého avatara!
+        {nickname}, vyber si svého avatara!
       </Typography>
       <Typography
         variant="subtitle1"

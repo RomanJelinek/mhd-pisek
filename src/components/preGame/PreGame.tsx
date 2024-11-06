@@ -3,17 +3,60 @@
 import { useProgress } from '@/context/ProgressContext';
 import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
-import { Box, Button, Container } from '@mui/material';
+import { Box, Button, Container, Typography } from '@mui/material';
 import { IconPicker } from './icon-picker/IconPicker';
 import { Name } from './name/Name';
+import { useUser } from '@/context/UserContext';
+import React, { useState } from 'react';
+import { z } from 'zod';
+import { useRouter } from 'next/navigation';
+import { Instructions } from './instructions/Instructions';
+
+enum PreGameSteps {
+  NAME = 1,
+  ICON_PICKER = 2,
+  INSTRUCTIONS = 3,
+}
+
+  const nicknameSchema = z.string().min(1, "Zadejte jméno hráče či týmu.");
+
 
 const PreGame = () => {
   const { currentStep, nextStep, previousStep } = useProgress();
+  const { nickname } = useUser();
+  const [error, setError] = useState<string | null>(null);
+  const router = useRouter();
 
-  const steps: { [key: number]: JSX.Element } = {
-    1: <Name />,
-    2: <IconPicker />,
+    const steps: { [key in PreGameSteps]: JSX.Element } = {
+    [PreGameSteps.NAME]: <Name error={error} />,
+    [PreGameSteps.ICON_PICKER]: <IconPicker />,
+    [PreGameSteps.INSTRUCTIONS]: <Instructions />,
   };
+
+
+  const validateStep = () => {
+    if (currentStep === PreGameSteps.NAME) {
+      const result = nicknameSchema.safeParse(nickname);
+      if (!result.success) {
+        setError(result.error.errors[0].message);
+        return false;
+      }
+    }
+    setError(null);
+    return true;
+  };
+
+  const handleNextStep = () => {
+    if (validateStep()) {
+      if (currentStep === PreGameSteps.INSTRUCTIONS) {
+        router.push('/');
+      } else {
+        nextStep();
+      }
+    }
+  };
+
+
 
   return (
     <Container
@@ -32,10 +75,10 @@ const PreGame = () => {
         flex="1"
         p={2}
       >
-        {steps[currentStep] || <div>Invalid step</div>}
+        {steps[currentStep as PreGameSteps] || <div>Invalid step</div>}
       </Box>
       <Box display="flex" justifyContent="center" mt="auto" mb={2} gap={1}>
-        {currentStep > 1 && (
+        {currentStep > PreGameSteps.NAME && (
           <Button
             variant="outlined"
             onClick={previousStep}
@@ -46,7 +89,7 @@ const PreGame = () => {
         )}
         <Button
           variant="contained"
-          onClick={nextStep}
+          onClick={handleNextStep}
           endIcon={<KeyboardArrowRightIcon />}
         >
           Další krok
