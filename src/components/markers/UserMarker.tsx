@@ -1,23 +1,22 @@
-"use client";
+'use client';
 
-import { Marker } from "react-leaflet";
-import L from "leaflet";
-import { ReactNode } from "react";
+import { useUser } from '@/context/UserContext';
+import L from 'leaflet';
+import { ReactNode, useTransition } from 'react';
+import { Marker } from 'react-leaflet';
 
 type UserMarkerProps = {
   position: [number, number];
-  userIconType: string;
   children?: ReactNode;
 };
 
-export const UserMarker = ({
-  children,
-  position,
-  userIconType,
-}: UserMarkerProps) => {
+export const UserMarker = ({ children, position }: UserMarkerProps) => {
+  const { icon: userIcon } = useUser();
+  const [isPending, startTransition] = useTransition();
+
   const icon = L.divIcon({
-    className: "",
-    html: `<span style="font-size: 40px">${userIconType}</span>`,
+    className: '',
+    html: `<span style="font-size: 40px">${userIcon}</span>`,
     iconSize: [32, 32],
     iconAnchor: [16, 16],
   });

@@ -1,5 +1,6 @@
 'use client';
 
+import { updateIcon } from '@/actions/userActions';
 import { useUser } from '@/context/UserContext';
 import {
   Avatar,
@@ -16,23 +17,30 @@ import {
   useTheme,
 } from '@mui/material';
 import Link from 'next/link';
-import React, { useState } from 'react';
+import React, { useState, useTransition } from 'react';
 
 const emojiOptions = ['😀', '🚀', '🐶', '🌈', '👑', '🍕', '🌍', '⚽️'];
 
-const IconPicker = () => {
-  const { icon, setIcon } = useUser();
-  const [selectedEmoji, setSelectedEmoji] = useState<string>(icon);
-  const theme = useTheme();
+type IconPickerProps = {
+  initialIcon: string;
+};
 
+const IconPicker = ({ initialIcon }: IconPickerProps) => {
+  const [selectedEmoji, setSelectedEmoji] = useState<string>(initialIcon);
+  const theme = useTheme();
+  const { setIcon } = useUser();
   const isSmallScreen = useMediaQuery(theme.breakpoints.down('sm'));
+  const [isPending, startTransition] = useTransition();
 
   const handleEmojiChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setSelectedEmoji(event.target.value);
-    setIcon(event.target.value);
+    const newIcon = event.target.value;
+    setSelectedEmoji(newIcon);
+    setIcon(newIcon);
+    startTransition(async () => {
+      await updateIcon(newIcon);
+    });
   };
 
-  // Responsive sizing for avatar and card dimensions
   const avatarSize = isSmallScreen ? 80 : 100;
   const cardSize = isSmallScreen ? 80 : 100;
   const fontSize = isSmallScreen ? 46 : 60;

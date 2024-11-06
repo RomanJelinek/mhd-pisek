@@ -1,6 +1,13 @@
 'use client';
 
-import React, { createContext, useContext, useState, ReactNode } from 'react';
+import { fetchUserData, updateCurrentStep } from '@/actions/userActions';
+import {
+  createContext,
+  ReactNode,
+  useContext,
+  useEffect,
+  useState,
+} from 'react';
 
 interface ProgressContextProps {
   currentStep: number;
@@ -10,8 +17,9 @@ interface ProgressContextProps {
   maxSteps: number;
 }
 
-const ProgressContext =
-  createContext<ProgressContextProps | undefined>(undefined);
+const ProgressContext = createContext<ProgressContextProps | undefined>(
+  undefined,
+);
 
 export const ProgressProvider = ({
   children,
@@ -21,8 +29,19 @@ export const ProgressProvider = ({
   maxSteps: number;
 }) => {
   const [currentStep, setCurrentStep] = useState(1);
+  useEffect(() => {
+    const fetchCurrentStep = async () => {
+      const { currentStep } = await fetchUserData();
+      setCurrentStep(currentStep);
+    };
 
-  const setStep = (step: number) => setCurrentStep(Math.min(step, maxSteps));
+    fetchCurrentStep();
+  }, []);
+
+  const setStep = (step: number) => {
+    setCurrentStep(Math.min(step, maxSteps));
+    updateCurrentStep(Math.min(step, maxSteps));
+  };
   const nextStep = () => setCurrentStep((prev) => Math.min(prev + 1, maxSteps));
   const previousStep = () => setCurrentStep((prev) => Math.max(1, prev - 1));
 

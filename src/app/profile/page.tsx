@@ -1,38 +1,34 @@
-import React, { useMemo } from "react";
-import dynamic from "next/dynamic";
-import CircularProgress from "@mui/material/CircularProgress";
+import { fetchUserData } from '@/actions/userActions';
+import CircularProgress from '@mui/material/CircularProgress';
+import dynamic from 'next/dynamic';
 
-export default function Profile() {
-  const DynamicLocationProvider = useMemo(
-    () =>
-      dynamic(() => import("@/context/LocationContext"), {
-        loading: () => <CircularProgress />,
-        ssr: false,
-      }),
-    [],
+export default async function Profile() {
+  const { icon } = await fetchUserData();
+
+  const DynamicLocationProvider = dynamic(
+    () => import('@/context/LocationContext'),
+    {
+      loading: () => <CircularProgress />,
+      ssr: false,
+    },
   );
 
-  const IconPicker = useMemo(
-    () =>
-      dynamic(() => import("@/components/iconPicker/IconPicker"), {
-        loading: () => <CircularProgress />,
-        ssr: false,
-      }),
-    [],
+  const IconPicker = dynamic(
+    () => import('@/components/iconPicker/IconPicker'),
+    {
+      loading: () => <CircularProgress />,
+      ssr: false,
+    },
   );
 
-  const ProfileMap = useMemo(
-    () =>
-      dynamic(() => import("@/components/map/ProfileMap"), {
-        loading: () => <CircularProgress />,
-        ssr: false,
-      }),
-    [],
-  );
+  const ProfileMap = dynamic(() => import('@/components/map/ProfileMap'), {
+    loading: () => <CircularProgress />,
+    ssr: false,
+  });
 
   return (
     <DynamicLocationProvider>
-      <IconPicker />
+      <IconPicker initialIcon={icon} />
       <ProfileMap />
     </DynamicLocationProvider>
   );

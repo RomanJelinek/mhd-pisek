@@ -1,5 +1,6 @@
 'use client';
 
+import LocationMarker from '@/components/map/LocationMarker';
 import { ArrowMarker } from '@/components/markers';
 import { useLocation } from '@/context/LocationContext';
 import { useProgress } from '@/context/ProgressContext';
@@ -12,11 +13,10 @@ import 'leaflet/dist/leaflet.css';
 import { useEffect } from 'react';
 import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet';
 import Modal from '../Modal';
-import LocationMarker from './LocationMarker';
 
 const Map = () => {
   const { position } = useLocation();
-  const { currentStep, nextStep } = useProgress();
+  const { currentStep, nextStep, setStep } = useProgress();
   const { modalState, openModal, closeModal } = useModalControl();
 
   const { goalPosition, modalModules, arrows } =
@@ -27,6 +27,7 @@ const Map = () => {
   const handleCloseModal = () => {
     closeModal();
     nextStep();
+    setStep(currentStep + 1);
   };
 
   useEffect(() => {
