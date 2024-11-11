@@ -1,0 +1,426 @@
+ {
+  "lineNumber" : 2,
+  "roads" : [
+    {
+      "features": [
+        "98"
+      ],
+      "stops": [
+        {
+          "stop": "Hradiště",
+          "time": "7:25"
+        },
+        {
+          "stop": "Ke Střelnici",
+          "time": "7:26"
+        },
+        {
+          "stop": "Na Rozhledně",
+          "time": "7:27"
+        },
+        {
+          "stop": "Hradišťská",
+          "time": "7:29"
+        },
+        {
+          "stop": "Švantlova",
+          "time": "7:31"
+        },
+        {
+          "stop": "Budovcova",
+          "time": "7:33"
+        },
+        {
+          "stop": "Nemocnice",
+          "time": "7:35"
+        }
+      ]
+    },
+    {
+      "features": [
+        "prac"
+      ],
+      "stops": [
+        {
+          "stop": "Hradiště",
+          "time": "8:25"
+        },
+        {
+          "stop": "Ke Střelnici",
+          "time": "8:26"
+        },
+        {
+          "stop": "Na Rozhledně",
+          "time": "8:27"
+        },
+        {
+          "stop": "Hradišťská",
+          "time": "8:29"
+        },
+        {
+          "stop": "Švantlova",
+          "time": "8:31"
+        },
+        {
+          "stop": "Budovcova",
+          "time": "8:33"
+        },
+        {
+          "stop": "Nemocnice",
+          "time": "8:35"
+        }
+      ]
+    },
+    {
+      "features": [
+        
+      ],
+      "stops": [
+        {
+          "stop": "Hradiště",
+          "time": "9:25"
+        },
+        {
+          "stop": "Ke Střelnici",
+          "time": "9:26"
+        },
+        {
+          "stop": "Na Rozhledně",
+          "time": "9:27"
+        },
+        {
+          "stop": "Hradišťská",
+          "time": "9:29"
+        },
+        {
+          "stop": "Švantlova",
+          "time": "9:31"
+        },
+        {
+          "stop": "Budovcova",
+          "time": "9:33"
+        },
+        {
+          "stop": "Nemocnice",
+          "time": "9:35"
+        }
+      ]
+    },
+    {
+      "features": [
+        "prac"
+      ],
+      "stops": [
+        {
+          "stop": "Hradiště",
+          "time": "10:25"
+        },
+        {
+          "stop": "Ke Střelnici",
+          "time": "10:26"
+        },
+        {
+          "stop": "Na Rozhledně",
+          "time": "10:27"
+        },
+        {
+          "stop": "Hradišťská",
+          "time": "10:29"
+        },
+        {
+          "stop": "Švantlova",
+          "time": "10:31"
+        },
+        {
+          "stop": "Budovcova",
+          "time": "10:33"
+        },
+        {
+          "stop": "Nemocnice",
+          "time": "10:35"
+        }
+      ]
+    },
+    {
+      "features": [
+        
+      ],
+      "stops": [
+        {
+          "stop": "Hradiště",
+          "time": "11:25"
+        },
+        {
+          "stop": "Ke Střelnici",
+          "time": "11:26"
+        },
+        {
+          "stop": "Na Rozhledně",
+          "time": "11:27"
+        },
+        {
+          "stop": "Hradišťská",
+          "time": "11:29"
+        },
+        {
+          "stop": "Švantlova",
+          "time": "11:31"
+        },
+        {
+          "stop": "Budovcova",
+          "time": "11:33"
+        },
+        {
+          "stop": "Nemocnice",
+          "time": "11:35"
+        }
+      ]
+    },
+    {
+      "features": [
+        "†",
+        "6"
+      ],
+      "stops": [
+        {
+          "stop": "Hradiště",
+          "time": "12:25"
+        },
+        {
+          "stop": "Ke Střelnici",
+          "time": "12:26"
+        },
+        {
+          "stop": "Na Rozhledně",
+          "time": "12:27"
+        },
+        {
+          "stop": "Hradišťská",
+          "time": "12:29"
+        },
+        {
+          "stop": "Švantlova",
+          "time": "12:31"
+        },
+        {
+          "stop": "Budovcova",
+          "time": "12:33"
+        },
+        {
+          "stop": "Nemocnice",
+          "time": "12:35"
+        }
+      ]
+    },
+    {
+      "features": [
+        
+      ],
+      "stops": [
+        {
+          "stop": "Hradiště",
+          "time": "13:25"
+        },
+        {
+          "stop": "Ke Střelnici",
+          "time": "13:26"
+        },
+        {
+          "stop": "Na Rozhledně",
+          "time": "13:27"
+        },
+        {
+          "stop": "Hradišťská",
+          "time": "13:29"
+        },
+        {
+          "stop": "Švantlova",
+          "time": "13:31"
+        },
+        {
+          "stop": "Budovcova",
+          "time": "13:33"
+        },
+        {
+          "stop": "Nemocnice",
+          "time": "13:35"
+        }
+      ]
+    },
+    {
+      "features": [
+        
+      ],
+      "stops": [
+        {
+          "stop": "Hradiště",
+          "time": "14:25"
+        },
+        {
+          "stop": "Ke Střelnici",
+          "time": "14:26"
+        },
+        {
+          "stop": "Na Rozhledně",
+          "time": "14:27"
+        },
+        {
+          "stop": "Hradišťská",
+          "time": "14:29"
+        },
+        {
+          "stop": "Švantlova",
+          "time": "14:31"
+        },
+        {
+          "stop": "Budovcova",
+          "time": "14:33"
+        },
+        {
+          "stop": "Nemocnice",
+          "time": "14:35"
+        }
+      ]
+    },
+    {
+      "features": [
+        
+      ],
+      "stops": [
+        {
+          "stop": "Hradiště",
+          "time": "15:25"
+        },
+        {
+          "stop": "Ke Střelnici",
+          "time": "15:26"
+        },
+        {
+          "stop": "Na Rozhledně",
+          "time": "15:27"
+        },
+        {
+          "stop": "Hradišťská",
+          "time": "15:29"
+        },
+        {
+          "stop": "Švantlova",
+          "time": "15:31"
+        },
+        {
+          "stop": "Budovcova",
+          "time": "15:33"
+        },
+        {
+          "stop": "Nemocnice",
+          "time": "15:35"
+        }
+      ]
+    },
+    {
+      "features": [
+        "prac"
+      ],
+      "stops": [
+        {
+          "stop": "Hradiště",
+          "time": "16:25"
+        },
+        {
+          "stop": "Ke Střelnici",
+          "time": "16:26"
+        },
+        {
+          "stop": "Na Rozhledně",
+          "time": "16:27"
+        },
+        {
+          "stop": "Hradišťská",
+          "time": "16:29"
+        },
+        {
+          "stop": "Švantlova",
+          "time": "16:31"
+        },
+        {
+          "stop": "Budovcova",
+          "time": "16:33"
+        },
+        {
+          "stop": "Nemocnice",
+          "time": "16:35"
+        }
+      ]
+    },
+    {
+      "features": [
+        "29"
+      ],
+      "stops": [
+        {
+          "stop": "Hradiště",
+          "time": "17:25"
+        },
+        {
+          "stop": "Ke Střelnici",
+          "time": "17:26"
+        },
+        {
+          "stop": "Na Rozhledně",
+          "time": "17:27"
+        },
+        {
+          "stop": "Hradišťská",
+          "time": "17:29"
+        },
+        {
+          "stop": "Švantlova",
+          "time": "17:31"
+        },
+        {
+          "stop": "Budovcova",
+          "time": "17:33"
+        },
+        {
+          "stop": "Nemocnice",
+          "time": "17:35"
+        }
+      ]
+    },
+    {
+      "features": [
+        "29"
+      ],
+      "stops": [
+        {
+          "stop": "Hradiště",
+          "time": "19:25"
+        },
+        {
+          "stop": "Ke Střelnici",
+          "time": "19:26"
+        },
+        {
+          "stop": "Na Rozhledně",
+          "time": "19:27"
+        },
+        {
+          "stop": "Hradišťská",
+          "time": "19:29"
+        },
+        {
+          "stop": "Švantlova",
+          "time": "19:31"
+        },
+        {
+          "stop": "Budovcova",
+          "time": "19:33"
+        },
+        {
+          "stop": "Nemocnice",
+          "time": "19:35"
+        }
+      ]
+    }
+  ]
+ }

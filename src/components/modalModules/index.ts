@@ -1,5 +1,5 @@
-import PerexModule, { PerexModuleProps } from './PerexModule';
-import QuestionModule, { QuestionModuleProps } from './QuestionModule';
+import PerexModule, { PerexModuleProps } from "./PerexModule";
+import QuestionModule, { QuestionModuleProps } from "./QuestionModule";
 
 export type ModalModule = {
   [K in keyof ModulePropsMap]: {

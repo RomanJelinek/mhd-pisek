@@ -1,5 +1,6 @@
-import { Box, Button, Dialog, DialogActions } from '@mui/material';
-import { ReactNode } from 'react';
+import { Box, Dialog, IconButton } from "@mui/material";
+import CloseIcon from "@mui/icons-material/Close";
+import { ReactNode } from "react";
 
 export type ModalProps = {
   isOpen: boolean;
@@ -10,21 +11,30 @@ export type ModalProps = {
 const Modal = ({ isOpen, modalContent, onClose }: ModalProps) => {
   return (
     <Dialog open={isOpen} fullWidth maxWidth="sm" fullScreen>
-      <Box
-        display="flex"
-        flexDirection="column"
-        justifyContent="center"
-        alignItems="center"
-        paddingY={4}
-        paddingX={2}
-        gap={2}
-      >
-        {modalContent}
-        <DialogActions>
-          <Button onClick={onClose} variant="contained" color="primary">
-            Splnit
-          </Button>
-        </DialogActions>
+      <Box position="relative">
+        <IconButton
+          aria-label="close"
+          onClick={onClose}
+          sx={{
+            position: "absolute",
+            right: 8,
+            top: 8,
+            color: "grey.500",
+          }}
+        >
+          <CloseIcon />
+        </IconButton>
+        <Box
+          display="flex"
+          flexDirection="column"
+          justifyContent="center"
+          alignItems="center"
+          paddingY={4}
+          paddingX={2}
+          gap={2}
+        >
+          {modalContent}
+        </Box>
       </Box>
     </Dialog>
   );

@@ -1,0 +1,665 @@
+  {
+  "lineNumber" : 5,
+  "roads" : [
+    {
+      "features": [
+        "prac"
+      ],
+      "stops": [
+        {
+          "stop": "Smrkovice",
+          "time": "6:41"
+        },
+        {
+          "stop": "U školy",
+          "time": "6:40"
+        },
+        {
+          "stop": "Semice",
+          "time": "6:37"
+        },
+        {
+          "stop": "U Hřebčince",
+          "time": "6:33"
+        },
+        {
+          "stop": "Za kapličkou",
+          "time": "6:32"
+        },
+        {
+          "stop": "Budějovická",
+          "time": "6:31"
+        },
+        {
+          "stop": "Budovcova",
+          "time": "6:29"
+        },
+        {
+          "stop": "Nádražní",
+          "time": "6:27"
+        },
+        {
+          "stop": "U autobusového nádraží",
+          "time": "6:26"
+        },
+        {
+          "stop": "Vlakové nádraží",
+          "time": "6:25"
+        },
+        {
+          "stop": "Šrámkův most",
+          "time": "6:22"
+        },
+        {
+          "stop": "Čelakovského",
+          "time": "6:20"
+        },
+        {
+          "stop": "Pražská",
+          "time": "6:18"
+        },
+        {
+          "stop": "Na Kuchyňce",
+          "time": "6:16"
+        },
+        {
+          "stop": "Průmyslová",
+          "time": "6:13"
+        },
+        {
+          "stop": "Čížovská",
+          "time": "6:12"
+        },
+        {
+          "stop": "Dobešice",
+          "time": "6:10"
+        }
+      ]
+    },
+    {
+      "features": [
+        "prac"
+      ],
+      "stops": [
+        {
+          "stop": "Smrkovice",
+          "time": "8:32"
+        },
+        {
+          "stop": "U školy",
+          "time": "8:31"
+        },
+        {
+          "stop": "Semice",
+          "time": "8:28"
+        },
+        {
+          "stop": "Flekačky",
+          "time": "8:24"
+        },
+        {
+          "stop": "Semice",
+          "time": "8:21"
+        },
+        {
+          "stop": "U Hřebčince",
+          "time": "8:17"
+        },
+        {
+          "stop": "Za kapličkou",
+          "time": "8:16"
+        },
+        {
+          "stop": "Budějovická",
+          "time": "8:15"
+        },
+        {
+          "stop": "Budovcova",
+          "time": "8:13"
+        },
+        {
+          "stop": "Nádražní",
+          "time": "8:11"
+        },
+        {
+          "stop": "U autobusového nádraží",
+          "time": "8:10"
+        },
+        {
+          "stop": "Vlakové nádraží",
+          "time": "8:09"
+        },
+        {
+          "stop": "Šrámkův most",
+          "time": "8:07"
+        },
+        {
+          "stop": "Čelakovského",
+          "time": "8:05"
+        },
+        {
+          "stop": "Pražská",
+          "time": "8:03"
+        },
+        {
+          "stop": "Na Kuchyňce",
+          "time": "8:01"
+        },
+        {
+          "stop": "Průmyslová",
+          "time": "7:58"
+        },
+        {
+          "stop": "Čížovská",
+          "time": "7:57"
+        },
+        {
+          "stop": "Dobešice",
+          "time": "7:55"
+        }
+      ]
+    },
+    {
+      "features": [
+        
+      ],
+      "stops": [
+        {
+          "stop": "Smrkovice",
+          "time": "11:08"
+        },
+        {
+          "stop": "U školy",
+          "time": "11:07"
+        },
+        {
+          "stop": "Semice",
+          "time": "11:04"
+        },
+        {
+          "stop": "U Hřebčince",
+          "time": "11:00"
+        },
+        {
+          "stop": "Obchodní",
+          "time": "10:58"
+        },
+        {
+          "stop": "Za kapličkou",
+          "time": "10:56"
+        },
+        {
+          "stop": "Budějovická",
+          "time": "10:55"
+        },
+        {
+          "stop": "Budovcova",
+          "time": "10:53"
+        },
+        {
+          "stop": "Nádražní",
+          "time": "10:51"
+        },
+        {
+          "stop": "Autobusové nádraží",
+          "time": "10:50"
+        }
+      ]
+    },
+    {
+      "features": [
+        "prac"
+      ],
+      "stops": [
+        {
+          "stop": "Smrkovice",
+          "time": "13:14"
+        },
+        {
+          "stop": "U školy",
+          "time": "13:13"
+        },
+        {
+          "stop": "Semice",
+          "time": "13:10"
+        },
+        {
+          "stop": "Flekačky",
+          "time": "13:06"
+        },
+        {
+          "stop": "Semice",
+          "time": "13:03"
+        },
+        {
+          "stop": "U Hřebčince",
+          "time": "12:59"
+        },
+        {
+          "stop": "Za kapličkou",
+          "time": "12:58"
+        },
+        {
+          "stop": "Budějovická",
+          "time": "12:57"
+        },
+        {
+          "stop": "Budovcova",
+          "time": "12:55"
+        },
+        {
+          "stop": "Nádražní",
+          "time": "12:53"
+        },
+        {
+          "stop": "Autobusové nádraží",
+          "time": "12:52"
+        }
+      ]
+    },
+    {
+      "features": [
+        "prac"
+      ],
+      "stops": [
+        {
+          "stop": "Smrkovice",
+          "time": "14:41"
+        },
+        {
+          "stop": "U školy",
+          "time": "14:40"
+        },
+        {
+          "stop": "Semice",
+          "time": "14:37"
+        },
+        {
+          "stop": "U Hřebčince",
+          "time": "14:33"
+        },
+        {
+          "stop": "Za kapličkou",
+          "time": "14:32"
+        },
+        {
+          "stop": "Budějovická",
+          "time": "14:31"
+        },
+        {
+          "stop": "Budovcova",
+          "time": "14:29"
+        },
+        {
+          "stop": "Nádražní",
+          "time": "14:27"
+        },
+        {
+          "stop": "U autobusového nádraží",
+          "time": "14:26"
+        },
+        {
+          "stop": "Vlakové nádraží",
+          "time": "14:25"
+        },
+        {
+          "stop": "Šrámkův most",
+          "time": "14:22"
+        },
+        {
+          "stop": "Čelakovského",
+          "time": "14:20"
+        },
+        {
+          "stop": "Pražská",
+          "time": "14:18"
+        },
+        {
+          "stop": "Na Kuchyňce",
+          "time": "14:16"
+        },
+        {
+          "stop": "Průmyslová",
+          "time": "14:13"
+        },
+        {
+          "stop": "Čížovská",
+          "time": "14:12"
+        },
+        {
+          "stop": "Dobešice",
+          "time": "14:10"
+        }
+      ]
+    },
+    {
+      "features": [
+        "prac"
+      ],
+      "stops": [
+        {
+          "stop": "Smrkovice",
+          "time": "15:47"
+        },
+        {
+          "stop": "U školy",
+          "time": "15:46"
+        },
+        {
+          "stop": "Semice",
+          "time": "15:43"
+        },
+        {
+          "stop": "Flekačky",
+          "time": "15:39"
+        },
+        {
+          "stop": "Semice",
+          "time": "15:36"
+        },
+        {
+          "stop": "U Hřebčince",
+          "time": "15:32"
+        },
+        {
+          "stop": "Za kapličkou",
+          "time": "15:31"
+        },
+        {
+          "stop": "Budějovická",
+          "time": "15:30"
+        },
+        {
+          "stop": "Budovcova",
+          "time": "15:28"
+        },
+        {
+          "stop": "Nádražní",
+          "time": "15:26"
+        },
+        {
+          "stop": "Autobusové nádraží",
+          "time": "15:25"
+        }
+      ]
+    },
+    {
+      "features": [
+        "prac"
+      ],
+      "stops": [
+        {
+          "stop": "Smrkovice",
+          "time": "16:49"
+        },
+        {
+          "stop": "U školy",
+          "time": "16:48"
+        },
+        {
+          "stop": "Semice",
+          "time": "16:45"
+        },
+        {
+          "stop": "U Hřebčince",
+          "time": "16:41"
+        },
+        {
+          "stop": "Za kapličkou",
+          "time": "16:40"
+        },
+        {
+          "stop": "Budějovická",
+          "time": "16:39"
+        },
+        {
+          "stop": "Budovcova",
+          "time": "16:37"
+        },
+        {
+          "stop": "Nádražní",
+          "time": "16:35"
+        },
+        {
+          "stop": "U autobusového nádraží",
+          "time": "16:34"
+        },
+        {
+          "stop": "Vlakové nádraží",
+          "time": "16:33"
+        },
+        {
+          "stop": "Šrámkův most",
+          "time": "16:30"
+        },
+        {
+          "stop": "Čelakovského",
+          "time": "16:28"
+        },
+        {
+          "stop": "Pražská",
+          "time": "16:26"
+        },
+        {
+          "stop": "Na Kuchyňce",
+          "time": "16:24"
+        },
+        {
+          "stop": "Průmyslová",
+          "time": "16:21"
+        },
+        {
+          "stop": "Čížovská",
+          "time": "16:20"
+        },
+        {
+          "stop": "Dobešice",
+          "time": "16:18"
+        }
+      ]
+    },
+    {
+      "features": [
+        "29"
+      ],
+      "stops": [
+        {
+          "stop": "Smrkovice",
+          "time": "17:22"
+        },
+        {
+          "stop": "U školy",
+          "time": "17:21"
+        },
+        {
+          "stop": "Semice",
+          "time": "17:18"
+        },
+        {
+          "stop": "Flekačky",
+          "time": "17:14"
+        },
+        {
+          "stop": "Semice",
+          "time": "17:11"
+        },
+        {
+          "stop": "U Hřebčince",
+          "time": "17:07"
+        },
+        {
+          "stop": "Za kapličkou",
+          "time": "17:06"
+        },
+        {
+          "stop": "Budějovická",
+          "time": "17:05"
+        },
+        {
+          "stop": "Budovcova",
+          "time": "17:03"
+        },
+        {
+          "stop": "Nádražní",
+          "time": "17:01"
+        },
+        {
+          "stop": "Autobusové nádraží",
+          "time": "17:00"
+        }
+      ]
+    },
+    {
+      "features": [
+        "prac",
+        "29"
+      ],
+      "stops": [
+        {
+          "stop": "Smrkovice",
+          "time": "18:42"
+        },
+        {
+          "stop": "U školy",
+          "time": "18:41"
+        },
+        {
+          "stop": "Semice",
+          "time": "18:38"
+        },
+        {
+          "stop": "U Hřebčince",
+          "time": "18:34"
+        },
+        {
+          "stop": "Za kapličkou",
+          "time": "18:33"
+        },
+        {
+          "stop": "Budějovická",
+          "time": "18:32"
+        },
+        {
+          "stop": "Budovcova",
+          "time": "18:30"
+        },
+        {
+          "stop": "Nádražní",
+          "time": "18:28"
+        },
+        {
+          "stop": "U autobusového nádraží",
+          "time": "18:27"
+        },
+        {
+          "stop": "Vlakové nádraží",
+          "time": "18:26"
+        },
+        {
+          "stop": "Šrámkův most",
+          "time": "18:23"
+        },
+        {
+          "stop": "Čelakovského",
+          "time": "18:21"
+        },
+        {
+          "stop": "Pražská",
+          "time": "18:19"
+        },
+        {
+          "stop": "Na Kuchyňce",
+          "time": "18:17"
+        },
+        {
+          "stop": "Průmyslová",
+          "time": "18:14"
+        },
+        {
+          "stop": "Čížovská",
+          "time": "18:13"
+        },
+        {
+          "stop": "Dobešice",
+          "time": "18:11"
+        }
+      ]
+    },
+    {
+      "features": [
+        "prac",
+        "68"
+      ],
+      "stops": [
+        {
+          "stop": "Smrkovice",
+          "time": "22:41"
+        },
+        {
+          "stop": "U školy",
+          "time": "22:40"
+        },
+        {
+          "stop": "Semice",
+          "time": "22:37"
+        },
+        {
+          "stop": "U Hřebčince",
+          "time": "22:33"
+        },
+        {
+          "stop": "Za kapličkou",
+          "time": "22:32"
+        },
+        {
+          "stop": "Budějovická",
+          "time": "22:31"
+        },
+        {
+          "stop": "Budovcova",
+          "time": "22:29"
+        },
+        {
+          "stop": "Nádražní",
+          "time": "22:27"
+        },
+        {
+          "stop": "U autobusového nádraží",
+          "time": "22:26"
+        },
+        {
+          "stop": "Vlakové nádraží",
+          "time": "22:25"
+        },
+        {
+          "stop": "Šrámkův most",
+          "time": "22:22"
+        },
+        {
+          "stop": "Čelakovského",
+          "time": "22:20"
+        },
+        {
+          "stop": "Pražská",
+          "time": "22:18"
+        },
+        {
+          "stop": "Na Kuchyňce",
+          "time": "22:16"
+        },
+        {
+          "stop": "Průmyslová",
+          "time": "22:13"
+        },
+        {
+          "stop": "Čížovská",
+          "time": "22:12"
+        },
+        {
+          "stop": "Dobešice",
+          "time": "22:10"
+        }
+      ]
+    }
+  ]
+  }

@@ -1,0 +1,103 @@
+   {
+  "lineNumber" : 7,
+  "roads" : [
+    {
+      "features": [
+        "†",
+        "6",
+        "99"
+      ],
+      "stops": [
+        {
+          "stop": "Vlakové nádraží",
+          "time": "8:55"
+        },
+        {
+          "stop": "U autobusového nádraží",
+          "time": "8:56"
+        },
+        {
+          "stop": "Nádražní",
+          "time": "8:57"
+        },
+        {
+          "stop": "Budovcova",
+          "time": "8:59"
+        },
+        {
+          "stop": "Velké náměstí",
+          "time": "9:01"
+        },
+        {
+          "stop": "Harantova",
+          "time": "9:04"
+        },
+        {
+          "stop": "Žižkova",
+          "time": "9:06"
+        },
+        {
+          "stop": "Logry",
+          "time": "9:09"
+        },
+        {
+          "stop": "Zelená alej",
+          "time": "9:13"
+        },
+        {
+          "stop": "Živec",
+          "time": "9:15"
+        }
+      ]
+    },
+    {
+      "features": [
+        "†",
+        "6",
+        "99"
+      ],
+      "stops": [
+        {
+          "stop": "Vlakové nádraží",
+          "time": "12:55"
+        },
+        {
+          "stop": "U autobusového nádraží",
+          "time": "12:56"
+        },
+        {
+          "stop": "Nádražní",
+          "time": "12:57"
+        },
+        {
+          "stop": "Budovcova",
+          "time": "12:59"
+        },
+        {
+          "stop": "Velké náměstí",
+          "time": "13:01"
+        },
+        {
+          "stop": "Harantova",
+          "time": "13:04"
+        },
+        {
+          "stop": "Žižkova",
+          "time": "13:06"
+        },
+        {
+          "stop": "Logry",
+          "time": "13:09"
+        },
+        {
+          "stop": "Zelená alej",
+          "time": "13:13"
+        },
+        {
+          "stop": "Živec",
+          "time": "13:15"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,184 @@
+  {
+  "lineNumber" : 4,
+  "roads" : [
+    {
+      "features": [
+        "prac"
+      ],
+      "stops": [
+        {
+          "stop": "Hradiště",
+          "time": "5:25"
+        },
+        {
+          "stop": "Ke Střelnici",
+          "time": "5:26"
+        },
+        {
+          "stop": "Na Rozhledně",
+          "time": "5:28"
+        },
+        {
+          "stop": "Hradišťská",
+          "time": "5:30"
+        },
+        {
+          "stop": "Burketova",
+          "time": "5:33"
+        },
+        {
+          "stop": "Václavské náměstí",
+          "time": "5:34"
+        },
+        {
+          "stop": "Burketova",
+          "time": "5:35"
+        },
+        {
+          "stop": "Čelakovského",
+          "time": "5:36"
+        },
+        {
+          "stop": "Pražská",
+          "time": "5:38"
+        },
+        {
+          "stop": "Na Kuchyňce",
+          "time": "5:39"
+        },
+        {
+          "stop": "Průmyslová",
+          "time": "5:42"
+        },
+        {
+          "stop": "Čížovská",
+          "time": "5:43"
+        },
+        {
+          "stop": "Dobešice",
+          "time": "5:45"
+        }
+      ]
+    },
+    {
+      "features": [
+        "prac"
+      ],
+      "stops": [
+        {
+          "stop": "Hradiště",
+          "time": "13:25"
+        },
+        {
+          "stop": "Ke Střelnici",
+          "time": "13:26"
+        },
+        {
+          "stop": "Na Rozhledně",
+          "time": "13:28"
+        },
+        {
+          "stop": "Hradišťská",
+          "time": "13:30"
+        },
+        {
+          "stop": "Burketova",
+          "time": "13:33"
+        },
+        {
+          "stop": "Václavské náměstí",
+          "time": "13:34"
+        },
+        {
+          "stop": "Burketova",
+          "time": "13:35"
+        },
+        {
+          "stop": "Čelakovského",
+          "time": "13:36"
+        },
+        {
+          "stop": "Pražská",
+          "time": "13:38"
+        },
+        {
+          "stop": "Na Kuchyňce",
+          "time": "13:39"
+        },
+        {
+          "stop": "Průmyslová",
+          "time": "13:42"
+        },
+        {
+          "stop": "Čížovská",
+          "time": "13:43"
+        },
+        {
+          "stop": "Dobešice",
+          "time": "13:45"
+        }
+      ]
+    },
+    {
+      "features": [
+        "prac",
+        "7",
+        "68"
+      ],
+      "stops": [
+        {
+          "stop": "Hradiště",
+          "time": "21:25"
+        },
+        {
+          "stop": "Ke Střelnici",
+          "time": "21:26"
+        },
+        {
+          "stop": "Na Rozhledně",
+          "time": "21:28"
+        },
+        {
+          "stop": "Hradišťská",
+          "time": "21:30"
+        },
+        {
+          "stop": "Burketova",
+          "time": "21:33"
+        },
+        {
+          "stop": "Václavské náměstí",
+          "time": "21:34"
+        },
+        {
+          "stop": "Burketova",
+          "time": "21:35"
+        },
+        {
+          "stop": "Čelakovského",
+          "time": "21:36"
+        },
+        {
+          "stop": "Pražská",
+          "time": "21:38"
+        },
+        {
+          "stop": "Na Kuchyňce",
+          "time": "21:39"
+        },
+        {
+          "stop": "Průmyslová",
+          "time": "21:42"
+        },
+        {
+          "stop": "Čížovská",
+          "time": "21:43"
+        },
+        {
+          "stop": "Dobešice",
+          "time": "21:45"
+        }
+      ]
+    }
+  ]
+  }

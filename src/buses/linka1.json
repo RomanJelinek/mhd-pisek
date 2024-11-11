@@ -1,0 +1,999 @@
+{ 
+  "lineNumber" : 1,
+  "direction" : "main",
+  "roads" : [
+    {
+      "features": [
+        "prac"
+      ],
+      "stops": [
+        {
+          "stop": "Vlakové nádraží",
+          "time": "7:50"
+        },
+        {
+          "stop": "U autobusového nádraží",
+          "time": "7:49"
+        },
+        {
+          "stop": "Nádražní",
+          "time": "7:48"
+        },
+        {
+          "stop": "Budovcova",
+          "time": "7:46"
+        },
+        {
+          "stop": "Nemocnice",
+          "time": "7:44"
+        },
+        {
+          "stop": "Harantova",
+          "time": "7:42"
+        },
+        {
+          "stop": "Žižkova",
+          "time": "7:40"
+        },
+        {
+          "stop": "Logry",
+          "time": "7:37"
+        },
+        {
+          "stop": "Lesní hřbitov",
+          "time": "7:34"
+        },
+        {
+          "stop": "Kollárova",
+          "time": "7:30"
+        },
+        {
+          "stop": "Kulturní dům",
+          "time": "7:29"
+        },
+        {
+          "stop": "Dvořákova",
+          "time": "7:28"
+        },
+        {
+          "stop": "Čelakovského",
+          "time": "7:26"
+        },
+        {
+          "stop": "Burketova",
+          "time": "7:25"
+        },
+        {
+          "stop": "Václavské náměstí",
+          "time": "7:24"
+        },
+        {
+          "stop": "Strakonická",
+          "time": "7:22"
+        },
+        {
+          "stop": "Václavské náměstí",
+          "time": "7:21"
+        },
+        {
+          "stop": "Burketova",
+          "time": "7:20"
+        },
+        {
+          "stop": "U autobusového nádraží",
+          "time": "7:16"
+        },
+        {
+          "stop": "Vlakové nádraží",
+          "time": "7:15"
+        }
+      ]
+    },
+    {
+      "features": [
+        "†",
+        "6"
+      ],
+      "stops": [
+        {
+          "stop": "Vlakové nádraží",
+          "time": "7:51"
+        },
+        {
+          "stop": "U autobusového nádraží",
+          "time": "7:50"
+        },
+        {
+          "stop": "Nádražní",
+          "time": "7:49"
+        },
+        {
+          "stop": "Budovcova",
+          "time": "7:47"
+        },
+        {
+          "stop": "Nemocnice",
+          "time": "7:45"
+        },
+        {
+          "stop": "Harantova",
+          "time": "7:43"
+        },
+        {
+          "stop": "Žižkova",
+          "time": "7:41"
+        },
+        {
+          "stop": "Logry",
+          "time": "7:38"
+        },
+        {
+          "stop": "Kollárova",
+          "time": "7:35"
+        },
+        {
+          "stop": "Kulturní dům",
+          "time": "7:34"
+        },
+        {
+          "stop": "Dvořákova",
+          "time": "7:33"
+        },
+        {
+          "stop": "Čelakovského",
+          "time": "7:31"
+        },
+        {
+          "stop": "Burketova",
+          "time": "7:30"
+        },
+        {
+          "stop": "Václavské náměstí",
+          "time": "7:29"
+        },
+        {
+          "stop": "Strakonická",
+          "time": "7:27"
+        },
+        {
+          "stop": "Václavské náměstí",
+          "time": "7:26"
+        },
+        {
+          "stop": "Burketova",
+          "time": "7:25"
+        },
+        {
+          "stop": "U autobusového nádraží",
+          "time": "7:21"
+        },
+        {
+          "stop": "Vlakové nádraží",
+          "time": "7:20"
+        }
+      ]
+    },
+    {
+      "features": [
+        "†",
+        "6"
+      ],
+      "stops": [
+        {
+          "stop": "Vlakové nádraží",
+          "time": "8:54"
+        },
+        {
+          "stop": "U autobusového nádraží",
+          "time": "8:53"
+        },
+        {
+          "stop": "Nádražní",
+          "time": "8:52"
+        },
+        {
+          "stop": "Budovcova",
+          "time": "8:50"
+        },
+        {
+          "stop": "Nemocnice",
+          "time": "8:48"
+        },
+        {
+          "stop": "Harantova",
+          "time": "8:46"
+        },
+        {
+          "stop": "Žižkova",
+          "time": "8:44"
+        },
+        {
+          "stop": "Logry",
+          "time": "8:41"
+        },
+        {
+          "stop": "Kollárova",
+          "time": "8:38"
+        },
+        {
+          "stop": "Kulturní dům",
+          "time": "8:37"
+        },
+        {
+          "stop": "Dvořákova",
+          "time": "8:36"
+        },
+        {
+          "stop": "Čelakovského",
+          "time": "8:34"
+        },
+        {
+          "stop": "Burketova",
+          "time": "8:33"
+        },
+        {
+          "stop": "Václavské náměstí",
+          "time": "8:32"
+        },
+        {
+          "stop": "Strakonická",
+          "time": "8:30"
+        }
+      ]
+    },
+    {
+      "features": [
+        "prac"
+      ],
+      "stops": [
+        {
+          "stop": "Vlakové nádraží",
+          "time": "9:51"
+        },
+        {
+          "stop": "U autobusového nádraží",
+          "time": "9:50"
+        },
+        {
+          "stop": "Nádražní",
+          "time": "9:49"
+        },
+        {
+          "stop": "Budovcova",
+          "time": "9:47"
+        },
+        {
+          "stop": "Nemocnice",
+          "time": "9:45"
+        },
+        {
+          "stop": "Harantova",
+          "time": "9:43"
+        },
+        {
+          "stop": "Žižkova",
+          "time": "9:41"
+        },
+        {
+          "stop": "Logry",
+          "time": "9:38"
+        },
+        {
+          "stop": "Kollárova",
+          "time": "9:35"
+        },
+        {
+          "stop": "Kulturní dům",
+          "time": "9:34"
+        },
+        {
+          "stop": "Dvořákova",
+          "time": "9:33"
+        },
+        {
+          "stop": "Čelakovského",
+          "time": "9:31"
+        },
+        {
+          "stop": "Burketova",
+          "time": "9:30"
+        },
+        {
+          "stop": "Václavské náměstí",
+          "time": "9:29"
+        },
+        {
+          "stop": "Strakonická",
+          "time": "9:27"
+        },
+        {
+          "stop": "Václavské náměstí",
+          "time": "9:26"
+        },
+        {
+          "stop": "Burketova",
+          "time": "9:25"
+        }
+      ]
+    },
+    {
+      "features": [
+        
+      ],
+      "stops": [
+        {
+          "stop": "Vlakové nádraží",
+          "time": "10:50"
+        },
+        {
+          "stop": "U autobusového nádraží",
+          "time": "10:49"
+        },
+        {
+          "stop": "Nádražní",
+          "time": "10:48"
+        },
+        {
+          "stop": "Budovcova",
+          "time": "10:46"
+        },
+        {
+          "stop": "Nemocnice",
+          "time": "10:44"
+        },
+        {
+          "stop": "Harantova",
+          "time": "10:42"
+        },
+        {
+          "stop": "Žižkova",
+          "time": "10:40"
+        },
+        {
+          "stop": "Logry",
+          "time": "10:37"
+        },
+        {
+          "stop": "Lesní hřbitov",
+          "time": "10:34"
+        },
+        {
+          "stop": "Kollárova",
+          "time": "10:30"
+        },
+        {
+          "stop": "Kulturní dům",
+          "time": "10:29"
+        },
+        {
+          "stop": "Dvořákova",
+          "time": "10:28"
+        },
+        {
+          "stop": "Čelakovského",
+          "time": "10:26"
+        },
+        {
+          "stop": "Burketova",
+          "time": "10:25"
+        },
+        {
+          "stop": "Václavské náměstí",
+          "time": "10:24"
+        },
+        {
+          "stop": "Strakonická",
+          "time": "10:22"
+        },
+        {
+          "stop": "Václavské náměstí",
+          "time": "10:21"
+        },
+        {
+          "stop": "Burketova",
+          "time": "10:20"
+        },
+        {
+          "stop": "U autobusového nádraží",
+          "time": "10:16"
+        },
+        {
+          "stop": "Vlakové nádraží",
+          "time": "10:15"
+        }
+      ]
+    },
+    {
+      "features": [
+        
+      ],
+      "stops": [
+        {
+          "stop": "Vlakové nádraží",
+          "time": "12:50"
+        },
+        {
+          "stop": "U autobusového nádraží",
+          "time": "12:49"
+        },
+        {
+          "stop": "Nádražní",
+          "time": "12:48"
+        },
+        {
+          "stop": "Budovcova",
+          "time": "12:46"
+        },
+        {
+          "stop": "Nemocnice",
+          "time": "12:44"
+        },
+        {
+          "stop": "Harantova",
+          "time": "12:42"
+        },
+        {
+          "stop": "Žižkova",
+          "time": "12:40"
+        },
+        {
+          "stop": "Logry",
+          "time": "12:37"
+        },
+        {
+          "stop": "Lesní hřbitov",
+          "time": "12:34"
+        },
+        {
+          "stop": "Kollárova",
+          "time": "12:30"
+        },
+        {
+          "stop": "Kulturní dům",
+          "time": "12:29"
+        },
+        {
+          "stop": "Dvořákova",
+          "time": "12:28"
+        },
+        {
+          "stop": "Čelakovského",
+          "time": "12:26"
+        },
+        {
+          "stop": "Burketova",
+          "time": "12:25"
+        },
+        {
+          "stop": "Václavské náměstí",
+          "time": "12:24"
+        },
+        {
+          "stop": "Strakonická",
+          "time": "12:22"
+        },
+        {
+          "stop": "Václavské náměstí",
+          "time": "12:21"
+        },
+        {
+          "stop": "Burketova",
+          "time": "12:20"
+        },
+        {
+          "stop": "U autobusového nádraží",
+          "time": "12:16"
+        },
+        {
+          "stop": "Vlakové nádraží",
+          "time": "12:15"
+        }
+      ]
+    },
+    {
+      "features": [
+        
+      ],
+      "stops": [
+        {
+          "stop": "Vlakové nádraží",
+          "time": "14:50"
+        },
+        {
+          "stop": "U autobusového nádraží",
+          "time": "14:49"
+        },
+        {
+          "stop": "Nádražní",
+          "time": "14:48"
+        },
+        {
+          "stop": "Budovcova",
+          "time": "14:46"
+        },
+        {
+          "stop": "Nemocnice",
+          "time": "14:44"
+        },
+        {
+          "stop": "Harantova",
+          "time": "14:42"
+        },
+        {
+          "stop": "Žižkova",
+          "time": "14:40"
+        },
+        {
+          "stop": "Logry",
+          "time": "14:37"
+        },
+        {
+          "stop": "Lesní hřbitov",
+          "time": "14:34"
+        },
+        {
+          "stop": "Kollárova",
+          "time": "14:30"
+        },
+        {
+          "stop": "Kulturní dům",
+          "time": "14:29"
+        },
+        {
+          "stop": "Dvořákova",
+          "time": "14:28"
+        },
+        {
+          "stop": "Čelakovského",
+          "time": "14:26"
+        },
+        {
+          "stop": "Burketova",
+          "time": "14:25"
+        },
+        {
+          "stop": "Václavské náměstí",
+          "time": "14:24"
+        },
+        {
+          "stop": "Strakonická",
+          "time": "14:22"
+        },
+        {
+          "stop": "Václavské náměstí",
+          "time": "14:21"
+        },
+        {
+          "stop": "Burketova",
+          "time": "14:20"
+        },
+        {
+          "stop": "Hradištská",
+          "time": "14:17"
+        },
+        {
+          "stop": "U autobusového nádraží",
+          "time": "14:14"
+        },
+        {
+          "stop": "Vlakové nádraží",
+          "time": "14:13"
+        }
+      ]
+    },
+    {
+      "features": [
+        "prac"
+      ],
+      "stops": [
+        {
+          "stop": "Vlakové nádraží",
+          "time": "15:51"
+        },
+        {
+          "stop": "U autobusového nádraží",
+          "time": "15:50"
+        },
+        {
+          "stop": "Nádražní",
+          "time": "15:49"
+        },
+        {
+          "stop": "Budovcova",
+          "time": "15:47"
+        },
+        {
+          "stop": "Nemocnice",
+          "time": "15:45"
+        },
+        {
+          "stop": "Harantova",
+          "time": "15:43"
+        },
+        {
+          "stop": "Žižkova",
+          "time": "15:41"
+        },
+        {
+          "stop": "Logry",
+          "time": "15:38"
+        },
+        {
+          "stop": "Kollárova",
+          "time": "15:35"
+        },
+        {
+          "stop": "Kulturní dům",
+          "time": "15:34"
+        },
+        {
+          "stop": "Dvořákova",
+          "time": "15:33"
+        },
+        {
+          "stop": "Čelakovského",
+          "time": "15:31"
+        },
+        {
+          "stop": "Burketova",
+          "time": "15:30"
+        },
+        {
+          "stop": "Václavské náměstí",
+          "time": "15:29"
+        },
+        {
+          "stop": "Strakonická",
+          "time": "15:27"
+        },
+        {
+          "stop": "Václavské náměstí",
+          "time": "15:26"
+        },
+        {
+          "stop": "Burketova",
+          "time": "15:25"
+        },
+        {
+          "stop": "U autobusového nádraží",
+          "time": "15:21"
+        },
+        {
+          "stop": "Vlakové nádraží",
+          "time": "15:20"
+        }
+      ]
+    },
+    {
+      "features": [
+        
+      ],
+      "stops": [
+        {
+          "stop": "Vlakové nádraží",
+          "time": "16:51"
+        },
+        {
+          "stop": "U autobusového nádraží",
+          "time": "16:50"
+        },
+        {
+          "stop": "Nádražní",
+          "time": "16:49"
+        },
+        {
+          "stop": "Budovcova",
+          "time": "16:47"
+        },
+        {
+          "stop": "Nemocnice",
+          "time": "16:45"
+        },
+        {
+          "stop": "Harantova",
+          "time": "16:43"
+        },
+        {
+          "stop": "Žižkova",
+          "time": "16:41"
+        },
+        {
+          "stop": "Logry",
+          "time": "16:38"
+        },
+        {
+          "stop": "Kollárova",
+          "time": "16:35"
+        },
+        {
+          "stop": "Kulturní dům",
+          "time": "16:34"
+        },
+        {
+          "stop": "Dvořákova",
+          "time": "16:33"
+        },
+        {
+          "stop": "Čelakovského",
+          "time": "16:31"
+        },
+        {
+          "stop": "Burketova",
+          "time": "16:30"
+        },
+        {
+          "stop": "Václavské náměstí",
+          "time": "16:29"
+        },
+        {
+          "stop": "Strakonická",
+          "time": "16:27"
+        },
+        {
+          "stop": "Václavské náměstí",
+          "time": "16:26"
+        },
+        {
+          "stop": "Burketova",
+          "time": "16:25"
+        },
+        {
+          "stop": "U autobusového nádraží",
+          "time": "16:21"
+        },
+        {
+          "stop": "Vlakové nádraží",
+          "time": "16:20"
+        }
+      ]
+    },
+    {
+      "features": [
+      ],
+      "stops": [
+        {
+          "stop": "Vlakové nádraží",
+          "time": "18:51"
+        },
+        {
+          "stop": "U autobusového nádraží",
+          "time": "18:50"
+        },
+        {
+          "stop": "Nádražní",
+          "time": "18:49"
+        },
+        {
+          "stop": "Budovcova",
+          "time": "18:47"
+        },
+        {
+          "stop": "Nemocnice",
+          "time": "18:45"
+        },
+        {
+          "stop": "Harantova",
+          "time": "18:43"
+        },
+        {
+          "stop": "Žižkova",
+          "time": "18:41"
+        },
+        {
+          "stop": "Logry",
+          "time": "18:38"
+        },
+        {
+          "stop": "Kollárova",
+          "time": "18:35"
+        },
+        {
+          "stop": "Kulturní dům",
+          "time": "18:34"
+        },
+        {
+          "stop": "Dvořákova",
+          "time": "18:33"
+        },
+        {
+          "stop": "Čelakovského",
+          "time": "18:31"
+        },
+        {
+          "stop": "Burketova",
+          "time": "18:30"
+        },
+        {
+          "stop": "Václavské náměstí",
+          "time": "18:29"
+        },
+        {
+          "stop": "Strakonická",
+          "time": "18:27"
+        },
+        {
+          "stop": "Václavské náměstí",
+          "time": "18:26"
+        },
+        {
+          "stop": "Burketova",
+          "time": "18:25"
+        },
+        {
+          "stop": "U autobusového nádraží",
+          "time": "18:21"
+        },
+        {
+          "stop": "Vlakové nádraží",
+          "time": "18:20"
+        }
+      ]
+    },
+    {
+      "features": [
+                "prac"
+      ],
+      "stops": [
+        {
+          "stop": "Vlakové nádraží",
+          "time": "19:51"
+        },
+        {
+          "stop": "U autobusového nádraží",
+          "time": "19:50"
+        },
+        {
+          "stop": "Nádražní",
+          "time": "19:49"
+        },
+        {
+          "stop": "Budovcova",
+          "time": "19:47"
+        },
+        {
+          "stop": "Nemocnice",
+          "time": "19:45"
+        },
+        {
+          "stop": "Harantova",
+          "time": "19:43"
+        },
+        {
+          "stop": "Žižkova",
+          "time": "19:41"
+        },
+        {
+          "stop": "Logry",
+          "time": "19:38"
+        },
+        {
+          "stop": "Kollárova",
+          "time": "19:35"
+        },
+        {
+          "stop": "Kulturní dům",
+          "time": "19:34"
+        },
+        {
+          "stop": "Dvořákova",
+          "time": "19:33"
+        },
+        {
+          "stop": "Čelakovského",
+          "time": "19:31"
+        },
+        {
+          "stop": "Burketova",
+          "time": "19:30"
+        },
+        {
+          "stop": "Václavské náměstí",
+          "time": "19:29"
+        },
+        {
+          "stop": "Strakonická",
+          "time": "19:27"
+        },
+        {
+          "stop": "Václavské náměstí",
+          "time": "19:26"
+        },
+        {
+          "stop": "Burketova",
+          "time": "19:25"
+        },
+        {
+          "stop": "U autobusového nádraží",
+          "time": "19:21"
+        },
+        {
+          "stop": "Vlakové nádraží",
+          "time": "19:20"
+        }
+      ]
+    },
+    {
+      "features": [
+        
+      ],
+      "stops": [
+        {
+          "stop": "Vlakové nádraží",
+          "time": "20:51"
+        },
+        {
+          "stop": "U autobusového nádraží",
+          "time": "20:50"
+        },
+        {
+          "stop": "Nádražní",
+          "time": "20:49"
+        },
+        {
+          "stop": "Budovcova",
+          "time": "20:47"
+        },
+        {
+          "stop": "Nemocnice",
+          "time": "20:45"
+        },
+        {
+          "stop": "Harantova",
+          "time": "20:43"
+        },
+        {
+          "stop": "Žižkova",
+          "time": "20:41"
+        },
+        {
+          "stop": "Logry",
+          "time": "20:38"
+        },
+        {
+          "stop": "Kollárova",
+          "time": "20:35"
+        },
+        {
+          "stop": "Kulturní dům",
+          "time": "20:34"
+        },
+        {
+          "stop": "Dvořákova",
+          "time": "20:33"
+        },
+        {
+          "stop": "Čelakovského",
+          "time": "20:31"
+        },
+        {
+          "stop": "Burketova",
+          "time": "20:30"
+        },
+        {
+          "stop": "Václavské náměstí",
+          "time": "20:29"
+        },
+        {
+          "stop": "Strakonická",
+          "time": "20:27"
+        },
+        {
+          "stop": "Václavské náměstí",
+          "time": "20:26"
+        },
+        {
+          "stop": "Burketova",
+          "time": "20:25"
+        },
+        {
+          "stop": "U autobusového nádraží",
+          "time": "20:21"
+        },
+        {
+          "stop": "Vlakové nádraží",
+          "time": "20:20"
+        }
+      ]
+    }
+  ]
+}

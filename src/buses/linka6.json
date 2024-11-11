@@ -1,0 +1,926 @@
+   {
+  "lineNumber" : 6,
+  "roads" : [
+    {
+      "features": [
+        
+      ],
+      "stops": [
+        {
+          "stop": "Hradiště",
+          "time": "5:15"
+        },
+        {
+          "stop": "Ke Střelnici",
+          "time": "5:16"
+        },
+        {
+          "stop": "Na Rozhledně",
+          "time": "5:18"
+        },
+        {
+          "stop": "Vlakové nádraží",
+          "time": "5:21"
+        },
+        {
+          "stop": "U autobusového nádraží",
+          "time": "5:22"
+        },
+        {
+          "stop": "Nádražní",
+          "time": "5:23"
+        },
+        {
+          "stop": "Budovcova",
+          "time": "5:25"
+        },
+        {
+          "stop": "Nemocnice",
+          "time": "5:28"
+        },
+        {
+          "stop": "Harantova",
+          "time": "5:30"
+        },
+        {
+          "stop": "Žižkova",
+          "time": "5:32"
+        },
+        {
+          "stop": "Sedláčkova",
+          "time": "5:33"
+        },
+        {
+          "stop": "U pekárny",
+          "time": "5:34"
+        },
+        {
+          "stop": "Za Pazdernou",
+          "time": "5:35"
+        },
+        {
+          "stop": "Na Houpačkách",
+          "time": "5:37"
+        },
+        {
+          "stop": "Dvořákova",
+          "time": "5:39"
+        }
+      ]
+    },
+    {
+      "features": [
+        "prac"
+      ],
+      "stops": [
+        {
+          "stop": "Hradiště",
+          "time": "5:50"
+        },
+        {
+          "stop": "Ke Střelnici",
+          "time": "5:51"
+        },
+        {
+          "stop": "Na Rozhledně",
+          "time": "5:53"
+        },
+        {
+          "stop": "Vlakové nádraží",
+          "time": "5:56"
+        },
+        {
+          "stop": "U autobusového nádraží",
+          "time": "5:57"
+        },
+        {
+          "stop": "Nádražní",
+          "time": "5:58"
+        },
+        {
+          "stop": "Budovcova",
+          "time": "6:00"
+        },
+        {
+          "stop": "Nemocnice",
+          "time": "6:03"
+        },
+        {
+          "stop": "Harantova",
+          "time": "6:05"
+        },
+        {
+          "stop": "Žižkova",
+          "time": "6:07"
+        },
+        {
+          "stop": "Sedláčkova",
+          "time": "6:08"
+        },
+        {
+          "stop": "U pekárny",
+          "time": "6:09"
+        },
+        {
+          "stop": "Za Pazdernou",
+          "time": "6:10"
+        },
+        {
+          "stop": "Na Houpačkách",
+          "time": "6:12"
+        },
+        {
+          "stop": "Dvořákova",
+          "time": "6:14"
+        },
+        {
+          "stop": "Čelakovského",
+          "time": "6:16"
+        },
+        {
+          "stop": "Burketova",
+          "time": "6:17"
+        },
+        {
+          "stop": "Nezamyslova",
+          "time": "6:19"
+        }
+      ]
+    },
+    {
+      "features": [
+        "prac"
+      ],
+      "stops": [
+        {
+          "stop": "Hradiště",
+          "time": "7:31"
+        },
+        {
+          "stop": "Ke Střelnici",
+          "time": "7:32"
+        },
+        {
+          "stop": "Na Rozhledně",
+          "time": "7:34"
+        },
+        {
+          "stop": "Vlakové nádraží",
+          "time": "7:37"
+        },
+        {
+          "stop": "U autobusového nádraží",
+          "time": "7:38"
+        },
+        {
+          "stop": "Nádražní",
+          "time": "7:39"
+        },
+        {
+          "stop": "Budovcova",
+          "time": "7:41"
+        },
+        {
+          "stop": "Velké náměstí",
+          "time": "7:43"
+        },
+        {
+          "stop": "Nemocnice",
+          "time": "7:46"
+        },
+        {
+          "stop": "Harantova",
+          "time": "7:48"
+        },
+        {
+          "stop": "Žižkova",
+          "time": "7:50"
+        },
+        {
+          "stop": "Sedláčkova",
+          "time": "7:51"
+        },
+        {
+          "stop": "U pekárny",
+          "time": "7:52"
+        },
+        {
+          "stop": "Za Pazdernou",
+          "time": "7:53"
+        },
+        {
+          "stop": "Na Houpačkách",
+          "time": "7:55"
+        },
+        {
+          "stop": "Dvořákova",
+          "time": "7:57"
+        },
+        {
+          "stop": "Čelakovského",
+          "time": "7:59"
+        },
+        {
+          "stop": "Burketova",
+          "time": "8:00"
+        },
+        {
+          "stop": "Nezamyslova",
+          "time": "8:02"
+        }
+      ]
+    },
+    {
+      "features": [
+        "6",
+        "†"
+      ],
+      "stops": [
+        {
+          "stop": "Hradiště",
+          "time": "8:00"
+        },
+        {
+          "stop": "Ke Střelnici",
+          "time": "8:01"
+        },
+        {
+          "stop": "Na Rozhledně",
+          "time": "8:03"
+        },
+        {
+          "stop": "Vlakové nádraží",
+          "time": "8:06"
+        },
+        {
+          "stop": "U autobusového nádraží",
+          "time": "8:07"
+        },
+        {
+          "stop": "Nádražní",
+          "time": "8:08"
+        },
+        {
+          "stop": "Budovcova",
+          "time": "8:10"
+        },
+        {
+          "stop": "Nemocnice",
+          "time": "8:13"
+        },
+        {
+          "stop": "Harantova",
+          "time": "8:15"
+        },
+        {
+          "stop": "Žižkova",
+          "time": "8:17"
+        },
+        {
+          "stop": "Sedláčkova",
+          "time": "8:18"
+        },
+        {
+          "stop": "U pekárny",
+          "time": "8:19"
+        },
+        {
+          "stop": "Za Pazdernou",
+          "time": "8:20"
+        },
+        {
+          "stop": "Na Houpačkách",
+          "time": "8:22"
+        },
+        {
+          "stop": "Dvořákova",
+          "time": "8:24"
+        },
+        {
+          "stop": "Čelakovského",
+          "time": "8:26"
+        },
+        {
+          "stop": "Burketova",
+          "time": "8:27"
+        },
+        {
+          "stop": "Václavské náměstí",
+          "time": "8:28"
+        },
+        {
+          "stop": "Strakonická",
+          "time": "8:29"
+        }
+      ]
+    },
+    {
+      "features": [
+        "prac"
+      ],
+      "stops": [
+        {
+          "stop": "Hradiště",
+          "time": "8:30"
+        },
+        {
+          "stop": "Ke Střelnici",
+          "time": "8:31"
+        },
+        {
+          "stop": "Na Rozhledně",
+          "time": "8:33"
+        },
+        {
+          "stop": "Vlakové nádraží",
+          "time": "8:36"
+        },
+        {
+          "stop": "U autobusového nádraží",
+          "time": "8:37"
+        },
+        {
+          "stop": "Nádražní",
+          "time": "8:38"
+        },
+        {
+          "stop": "Budovcova",
+          "time": "8:40"
+        },
+        {
+          "stop": "Velké náměstí",
+          "time": "8:42"
+        }
+      ]
+    },
+    {
+      "features": [
+        "prac"
+      ],
+      "stops": [
+        {
+          "stop": "Hradiště",
+          "time": "9:52"
+        },
+        {
+          "stop": "Ke Střelnici",
+          "time": "9:53"
+        },
+        {
+          "stop": "Na Rozhledně",
+          "time": "9:55"
+        },
+        {
+          "stop": "Vlakové nádraží",
+          "time": "9:58"
+        },
+        {
+          "stop": "U autobusového nádraží",
+          "time": "9:59"
+        },
+        {
+          "stop": "Nádražní",
+          "time": "10:00"
+        },
+        {
+          "stop": "Budovcova",
+          "time": "10:02"
+        },
+        {
+          "stop": "Velké náměstí",
+          "time": "10:04"
+        },
+        {
+          "stop": "Nemocnice",
+          "time": "10:07"
+        },
+        {
+          "stop": "Harantova",
+          "time": "10:09"
+        },
+        {
+          "stop": "Žižkova",
+          "time": "10:11"
+        },
+        {
+          "stop": "Sedláčkova",
+          "time": "10:12"
+        },
+        {
+          "stop": "U pekárny",
+          "time": "10:13"
+        },
+        {
+          "stop": "Za Pazdernou",
+          "time": "10:14"
+        },
+        {
+          "stop": "Na Houpačkách",
+          "time": "10:16"
+        },
+        {
+          "stop": "Dvořákova",
+          "time": "10:18"
+        }
+      ]
+    },
+    {
+      "features": [
+        "†",
+        "6"
+      ],
+      "stops": [
+        {
+          "stop": "Hradiště",
+          "time": "10:00"
+        },
+        {
+          "stop": "Ke Střelnici",
+          "time": "10:01"
+        },
+        {
+          "stop": "Na Rozhledně",
+          "time": "10:03"
+        },
+        {
+          "stop": "Vlakové nádraží",
+          "time": "10:06"
+        },
+        {
+          "stop": "U autobusového nádraží",
+          "time": "10:07"
+        },
+        {
+          "stop": "Nádražní",
+          "time": "10:08"
+        },
+        {
+          "stop": "Budovcova",
+          "time": "10:10"
+        },
+        {
+          "stop": "Velké náměstí",
+          "time": "10:12"
+        },
+        {
+          "stop": "Nemocnice",
+          "time": "10:15"
+        },
+        {
+          "stop": "Harantova",
+          "time": "10:17"
+        },
+        {
+          "stop": "Žižkova",
+          "time": "10:19"
+        },
+        {
+          "stop": "Sedláčkova",
+          "time": "10:20"
+        },
+        {
+          "stop": "U pekárny",
+          "time": "10:21"
+        },
+        {
+          "stop": "Za Pazdernou",
+          "time": "10:22"
+        },
+        {
+          "stop": "Na Houpačkách",
+          "time": "10:24"
+        },
+        {
+          "stop": "Dvořákova",
+          "time": "10:26"
+        },
+        {
+          "stop": "Čelakovského",
+          "time": "10:28"
+        },
+        {
+          "stop": "Burketova",
+          "time": "10:29"
+        },
+        {
+          "stop": "Nezamyslova",
+          "time": "10:31"
+        }
+      ]
+    },
+    {
+      "features": [
+        "prac"
+      ],
+      "stops": [
+        {
+          "stop": "Hradiště",
+          "time": "12:18"
+        },
+        {
+          "stop": "Ke Střelnici",
+          "time": "12:19"
+        },
+        {
+          "stop": "Na Rozhledně",
+          "time": "12:21"
+        },
+        {
+          "stop": "Vlakové nádraží",
+          "time": "12:24"
+        },
+        {
+          "stop": "U autobusového nádraží",
+          "time": "12:25"
+        },
+        {
+          "stop": "Nádražní",
+          "time": "12:26"
+        },
+        {
+          "stop": "Budovcova",
+          "time": "12:28"
+        },
+        {
+          "stop": "Velké náměstí",
+          "time": "12:30"
+        },
+        {
+          "stop": "Nemocnice",
+          "time": "12:33"
+        },
+        {
+          "stop": "Harantova",
+          "time": "12:35"
+        },
+        {
+          "stop": "Žižkova",
+          "time": "12:37"
+        },
+        {
+          "stop": "Sedláčkova",
+          "time": "12:38"
+        },
+        {
+          "stop": "U pekárny",
+          "time": "12:39"
+        },
+        {
+          "stop": "Za Pazdernou",
+          "time": "12:40"
+        },
+        {
+          "stop": "Na Houpačkách",
+          "time": "12:42"
+        },
+        {
+          "stop": "Dvořákova",
+          "time": "12:44"
+        },
+        {
+          "stop": "Čelakovského",
+          "time": "12:46"
+        },
+        {
+          "stop": "Burketova",
+          "time": "12:47"
+        },
+        {
+          "stop": "Nezamyslova",
+          "time": "12:49"
+        }
+      ]
+    },
+    {
+      "features": [
+        "prac"
+      ],
+      "stops": [
+        {
+          "stop": "Hradiště",
+          "time": "13:27"
+        },
+        {
+          "stop": "Ke Střelnici",
+          "time": "13:28"
+        },
+        {
+          "stop": "Na Rozhledně",
+          "time": "13:30"
+        },
+        {
+          "stop": "Vlakové nádraží",
+          "time": "13:33"
+        },
+        {
+          "stop": "U autobusového nádraží",
+          "time": "13:34"
+        },
+        {
+          "stop": "Nádražní",
+          "time": "13:35"
+        },
+        {
+          "stop": "Budovcova",
+          "time": "13:37"
+        },
+        {
+          "stop": "Velké náměstí",
+          "time": "13:39"
+        },
+        {
+          "stop": "Nemocnice",
+          "time": "13:42"
+        },
+        {
+          "stop": "Harantova",
+          "time": "13:44"
+        },
+        {
+          "stop": "Žižkova",
+          "time": "13:46"
+        },
+        {
+          "stop": "Sedláčkova",
+          "time": "13:47"
+        },
+        {
+          "stop": "U pekárny",
+          "time": "13:48"
+        },
+        {
+          "stop": "Za Pazdernou",
+          "time": "13:49"
+        },
+        {
+          "stop": "Na Houpačkách",
+          "time": "13:51"
+        },
+        {
+          "stop": "Dvořákova",
+          "time": "13:53"
+        },
+        {
+          "stop": "Čelakovského",
+          "time": "13:55"
+        },
+        {
+          "stop": "Burketova",
+          "time": "13:56"
+        },
+        {
+          "stop": "Nezamyslova",
+          "time": "13:58"
+        }
+      ]
+    },
+    {
+      "features": [
+        "prac"
+      ],
+      "stops": [
+        {
+          "stop": "Hradiště",
+          "time": "14:36"
+        },
+        {
+          "stop": "Ke Střelnici",
+          "time": "14:37"
+        },
+        {
+          "stop": "Na Rozhledně",
+          "time": "14:39"
+        },
+        {
+          "stop": "Vlakové nádraží",
+          "time": "14:42"
+        },
+        {
+          "stop": "U autobusového nádraží",
+          "time": "14:43"
+        },
+        {
+          "stop": "Nádražní",
+          "time": "14:44"
+        },
+        {
+          "stop": "Budovcova",
+          "time": "14:46"
+        },
+        {
+          "stop": "Velké náměstí",
+          "time": "14:48"
+        },
+        {
+          "stop": "Nemocnice",
+          "time": "14:51"
+        },
+        {
+          "stop": "Harantova",
+          "time": "14:53"
+        },
+        {
+          "stop": "Žižkova",
+          "time": "14:55"
+        },
+        {
+          "stop": "Sedláčkova",
+          "time": "14:56"
+        },
+        {
+          "stop": "U pekárny",
+          "time": "14:57"
+        },
+        {
+          "stop": "Za Pazdernou",
+          "time": "14:58"
+        },
+        {
+          "stop": "Na Houpačkách",
+          "time": "15:00"
+        },
+        {
+          "stop": "Dvořákova",
+          "time": "15:02"
+        },
+        {
+          "stop": "Čelakovského",
+          "time": "15:04"
+        },
+        {
+          "stop": "Burketova",
+          "time": "15:05"
+        },
+        {
+          "stop": "Nezamyslova",
+          "time": "15:07"
+        }
+      ]
+    },
+    {
+      "features": [
+        "†",
+        "6",
+        "29"
+      ],
+      "stops": [
+        {
+          "stop": "Hradiště",
+          "time": "16:15"
+        },
+        {
+          "stop": "Ke Střelnici",
+          "time": "16:16"
+        },
+        {
+          "stop": "Na Rozhledně",
+          "time": "16:18"
+        },
+        {
+          "stop": "Vlakové nádraží",
+          "time": "16:21"
+        },
+        {
+          "stop": "U autobusového nádraží",
+          "time": "16:22"
+        },
+        {
+          "stop": "Nádražní",
+          "time": "16:23"
+        },
+        {
+          "stop": "Budovcova",
+          "time": "16:25"
+        },
+        {
+          "stop": "Velké náměstí",
+          "time": "16:27"
+        },
+        {
+          "stop": "Nemocnice",
+          "time": "16:30"
+        },
+        {
+          "stop": "Harantova",
+          "time": "16:32"
+        },
+        {
+          "stop": "Žižkova",
+          "time": "16:34"
+        },
+        {
+          "stop": "Sedláčkova",
+          "time": "16:35"
+        },
+        {
+          "stop": "U pekárny",
+          "time": "16:36"
+        },
+        {
+          "stop": "Za Pazdernou",
+          "time": "16:37"
+        },
+        {
+          "stop": "Na Houpačkách",
+          "time": "16:39"
+        },
+        {
+          "stop": "Dvořákova",
+          "time": "16:41"
+        },
+        {
+          "stop": "Čelakovského",
+          "time": "16:43"
+        },
+        {
+          "stop": "Burketova",
+          "time": "16:44"
+        },
+        {
+          "stop": "Nezamyslova",
+          "time": "16:46"
+        }
+      ]
+    },
+    {
+      "features": [
+        "prac",
+        "29"
+      ],
+      "stops": [
+        {
+          "stop": "Hradiště",
+          "time": "18:23"
+        },
+        {
+          "stop": "Ke Střelnici",
+          "time": "18:24"
+        },
+        {
+          "stop": "Na Rozhledně",
+          "time": "18:26"
+        },
+        {
+          "stop": "Vlakové nádraží",
+          "time": "18:29"
+        },
+        {
+          "stop": "U autobusového nádraží",
+          "time": "18:30"
+        },
+        {
+          "stop": "Nádražní",
+          "time": "18:31"
+        },
+        {
+          "stop": "Budovcova",
+          "time": "18:33"
+        },
+        {
+          "stop": "Nemocnice",
+          "time": "18:36"
+        },
+        {
+          "stop": "Harantova",
+          "time": "18:38"
+        },
+        {
+          "stop": "Žižkova",
+          "time": "18:40"
+        },
+        {
+          "stop": "Sedláčkova",
+          "time": "18:41"
+        },
+        {
+          "stop": "U pekárny",
+          "time": "18:42"
+        },
+        {
+          "stop": "Za Pazdernou",
+          "time": "18:43"
+        },
+        {
+          "stop": "Na Houpačkách",
+          "time": "18:45"
+        },
+        {
+          "stop": "Dvořákova",
+          "time": "18:47"
+        },
+        {
+          "stop": "Čelakovského",
+          "time": "18:49"
+        },
+        {
+          "stop": "Burketova",
+          "time": "18:50"
+        },
+        {
+          "stop": "Nezamyslova",
+          "time": "18:52"
+        }
+      ]
+    }
+  ]
+}

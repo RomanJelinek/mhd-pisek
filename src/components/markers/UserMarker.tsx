@@ -1,8 +1,7 @@
 'use client';
 
-import { useUser } from '@/context/UserContext';
 import L from 'leaflet';
-import { ReactNode, useTransition } from 'react';
+import { ReactNode } from 'react';
 import { Marker } from 'react-leaflet';
 
 type UserMarkerProps = {
@@ -11,22 +10,15 @@ type UserMarkerProps = {
 };
 
 export const UserMarker = ({ children, position }: UserMarkerProps) => {
-  const { icon: userIcon } = useUser();
-  const [isPending, startTransition] = useTransition();
-
   const icon = L.divIcon({
     className: '',
-    html: `<span style="font-size: 40px">${userIcon}</span>`,
+    html: `<span style="font-size: 40px">😊</span>`,
     iconSize: [32, 32],
     iconAnchor: [16, 16],
   });
 
   return (
-    <Marker
-      position={new L.LatLng(position[0], position[1])}
-      icon={icon}
-      draggable
-    >
+    <Marker position={new L.LatLng(position[0], position[1])} icon={icon}>
       {children}
     </Marker>
   );

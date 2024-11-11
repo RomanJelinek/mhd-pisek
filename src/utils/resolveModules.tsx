@@ -1,4 +1,4 @@
-import { ModalModule, modulesMap } from '@/components/modalModules';
+import { ModalModule, modulesMap } from "@/components/modalModules";
 
 export const resolveModules = (modules: ModalModule[]) => {
   return modules.map(({ module, moduleProps }, index) => {

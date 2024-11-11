@@ -1,0 +1,804 @@
+ {
+  "lineNumber" : 3,
+  "roads" : [
+    {
+      "features": [
+        "prac"
+      ],
+      "stops": [
+        {
+          "stop": "Logry",
+          "time": "5:20"
+        },
+        {
+          "stop": "Erbenova",
+          "time": "5:23"
+        },
+        {
+          "stop": "Nábřeží 1. máje",
+          "time": "5:25"
+        },
+        {
+          "stop": "Dvořákova",
+          "time": "5:26"
+        },
+        {
+          "stop": "Pražská",
+          "time": "5:28"
+        },
+        {
+          "stop": "Na Kuchyňce",
+          "time": "5:29"
+        },
+        {
+          "stop": "Průmyslová",
+          "time": "5:32"
+        },
+        {
+          "stop": "Čížovská",
+          "time": "5:33"
+        },
+        {
+          "stop": "Dobešice",
+          "time": "5:35"
+        }
+      ]
+    },
+    {
+      "features": [
+        "28",
+        "6",
+        "prac"
+      ],
+      "stops": [
+        {
+          "stop": "Hradiště",
+          "time": "5:10"
+        },
+        {
+          "stop": "Ke Střelnici",
+          "time": "5:11"
+        },
+        {
+          "stop": "Na Rozhledně",
+          "time": "5:13"
+        },
+        {
+          "stop": "U autobusového nádraží",
+          "time": "5:15"
+        },
+        {
+          "stop": "Nádražní",
+          "time": "5:16"
+        },
+        {
+          "stop": "Budovcova",
+          "time": "5:18"
+        },
+        {
+          "stop": "Harantova",
+          "time": "5:20"
+        },
+        {
+          "stop": "Žižkova",
+          "time": "5:22"
+        },
+        {
+          "stop": "Logry",
+          "time": "5:25"
+        },
+        {
+          "stop": "Erbenova",
+          "time": "5:28"
+        },
+        {
+          "stop": "Nábřeží 1. máje",
+          "time": "5:30"
+        },
+        {
+          "stop": "Dvořákova",
+          "time": "5:31"
+        },
+        {
+          "stop": "Pražská",
+          "time": "5:33"
+        },
+        {
+          "stop": "Na Kuchyňce",
+          "time": "5:34"
+        },
+        {
+          "stop": "Průmyslová",
+          "time": "5:37"
+        },
+        {
+          "stop": "Čížovská",
+          "time": "5:38"
+        },
+        {
+          "stop": "Dobešice",
+          "time": "5:40"
+        }
+      ]
+    },
+    {
+      "features": [
+        "prac"
+      ],
+      "stops": [
+        {
+          "stop": "Hradiště",
+          "time": "6:20"
+        },
+        {
+          "stop": "Ke Střelnici",
+          "time": "6:21"
+        },
+        {
+          "stop": "Na Rozhledně",
+          "time": "6:23"
+        },
+        {
+          "stop": "U autobusového nádraží",
+          "time": "6:25"
+        },
+        {
+          "stop": "Nádražní",
+          "time": "6:26"
+        },
+        {
+          "stop": "Budovcova",
+          "time": "6:28"
+        },
+        {
+          "stop": "Harantova",
+          "time": "6:30"
+        },
+        {
+          "stop": "Žižkova",
+          "time": "6:32"
+        },
+        {
+          "stop": "Logry",
+          "time": "6:35"
+        },
+        {
+          "stop": "Erbenova",
+          "time": "6:38"
+        },
+        {
+          "stop": "Nábřeží 1. máje",
+          "time": "6:40"
+        },
+        {
+          "stop": "Dvořákova",
+          "time": "6:41"
+        },
+        {
+          "stop": "Pražská",
+          "time": "6:43"
+        },
+        {
+          "stop": "Na Kuchyňce",
+          "time": "6:44"
+        },
+        {
+          "stop": "Průmyslová",
+          "time": "6:47"
+        },
+        {
+          "stop": "Čížovská",
+          "time": "6:48"
+        },
+        {
+          "stop": "Dobešice",
+          "time": "6:50"
+        }
+      ]
+    },
+    {
+      "features": [
+        "prac"
+      ],
+      "stops": [
+        {
+          "stop": "Hradiště",
+          "time": "6:45"
+        },
+        {
+          "stop": "Ke Střelnici",
+          "time": "6:46"
+        },
+        {
+          "stop": "Na Rozhledně",
+          "time": "6:48"
+        },
+        {
+          "stop": "U autobusového nádraží",
+          "time": "6:50"
+        },
+        {
+          "stop": "Nádražní",
+          "time": "6:51"
+        },
+        {
+          "stop": "Budovcova",
+          "time": "6:53"
+        },
+        {
+          "stop": "Harantova",
+          "time": "6:55"
+        },
+        {
+          "stop": "Žižkova",
+          "time": "6:57"
+        },
+        {
+          "stop": "Logry",
+          "time": "7:00"
+        },
+        {
+          "stop": "Erbenova",
+          "time": "7:03"
+        },
+        {
+          "stop": "Nábřeží 1. máje",
+          "time": "7:05"
+        },
+        {
+          "stop": "Dvořákova",
+          "time": "7:06"
+        },
+        {
+          "stop": "Pražská",
+          "time": "7:08"
+        },
+        {
+          "stop": "Na Kuchyňce",
+          "time": "7:09"
+        },
+        {
+          "stop": "Průmyslová",
+          "time": "7:12"
+        },
+        {
+          "stop": "Čížovská",
+          "time": "7:13"
+        },
+        {
+          "stop": "Dobešice",
+          "time": "7:15"
+        }
+      ]
+    },
+    {
+      "features": [
+        "prac"
+      ],
+      "stops": [
+        {
+          "stop": "Hradiště",
+          "time": "7:15"
+        },
+        {
+          "stop": "Ke Střelnici",
+          "time": "7:16"
+        },
+        {
+          "stop": "Na Rozhledně",
+          "time": "7:18"
+        },
+        {
+          "stop": "U autobusového nádraží",
+          "time": "7:20"
+        },
+        {
+          "stop": "Nádražní",
+          "time": "7:21"
+        },
+        {
+          "stop": "Budovcova",
+          "time": "7:23"
+        },
+        {
+          "stop": "Harantova",
+          "time": "7:25"
+        },
+        {
+          "stop": "Žižkova",
+          "time": "7:27"
+        },
+        {
+          "stop": "Logry",
+          "time": "7:30"
+        },
+        {
+          "stop": "Erbenova",
+          "time": "7:33"
+        },
+        {
+          "stop": "Nábřeží 1. máje",
+          "time": "7:35"
+        },
+        {
+          "stop": "Dvořákova",
+          "time": "7:36"
+        },
+        {
+          "stop": "Pražská",
+          "time": "7:38"
+        },
+        {
+          "stop": "Na Kuchyňce",
+          "time": "7:39"
+        },
+        {
+          "stop": "Průmyslová",
+          "time": "7:42"
+        },
+        {
+          "stop": "Čížovská",
+          "time": "7:43"
+        },
+        {
+          "stop": "Dobešice",
+          "time": "7:45"
+        }
+      ]
+    },
+    {
+      "features": [
+        "prac"
+      ],
+      "stops": [
+        {
+          "stop": "Hradiště",
+          "time": "8:20"
+        },
+        {
+          "stop": "Ke Střelnici",
+          "time": "8:21"
+        },
+        {
+          "stop": "Na Rozhledně",
+          "time": "8:23"
+        },
+        {
+          "stop": "U autobusového nádraží",
+          "time": "8:25"
+        },
+        {
+          "stop": "Nádražní",
+          "time": "8:26"
+        },
+        {
+          "stop": "Budovcova",
+          "time": "8:28"
+        },
+        {
+          "stop": "Harantova",
+          "time": "8:30"
+        },
+        {
+          "stop": "Žižkova",
+          "time": "8:32"
+        },
+        {
+          "stop": "Logry",
+          "time": "8:35"
+        },
+        {
+          "stop": "Erbenova",
+          "time": "8:38"
+        },
+        {
+          "stop": "Nábřeží 1. máje",
+          "time": "8:40"
+        },
+        {
+          "stop": "Dvořákova",
+          "time": "8:41"
+        },
+        {
+          "stop": "Pražská",
+          "time": "8:43"
+        },
+        {
+          "stop": "Na Kuchyňce",
+          "time": "8:44"
+        },
+        {
+          "stop": "Průmyslová",
+          "time": "8:47"
+        },
+        {
+          "stop": "Čížovská",
+          "time": "8:48"
+        },
+        {
+          "stop": "Dobešice",
+          "time": "8:50"
+        }
+      ]
+    },
+    {
+      "features": [
+        "28",
+        "6",
+        "prac"
+      ],
+      "stops": [
+        {
+          "stop": "Hradiště",
+          "time": "13:10"
+        },
+        {
+          "stop": "Ke Střelnici",
+          "time": "13:11"
+        },
+        {
+          "stop": "Na Rozhledně",
+          "time": "13:13"
+        },
+        {
+          "stop": "U autobusového nádraží",
+          "time": "13:15"
+        },
+        {
+          "stop": "Nádražní",
+          "time": "13:16"
+        },
+        {
+          "stop": "Budovcova",
+          "time": "13:18"
+        },
+        {
+          "stop": "Harantova",
+          "time": "13:20"
+        },
+        {
+          "stop": "Žižkova",
+          "time": "13:22"
+        },
+        {
+          "stop": "Logry",
+          "time": "13:25"
+        },
+        {
+          "stop": "Erbenova",
+          "time": "13:28"
+        },
+        {
+          "stop": "Nábřeží 1. máje",
+          "time": "13:30"
+        },
+        {
+          "stop": "Dvořákova",
+          "time": "13:31"
+        },
+        {
+          "stop": "Pražská",
+          "time": "13:33"
+        },
+        {
+          "stop": "Na Kuchyňce",
+          "time": "13:34"
+        },
+        {
+          "stop": "Průmyslová",
+          "time": "13:37"
+        },
+        {
+          "stop": "Čížovská",
+          "time": "13:38"
+        },
+        {
+          "stop": "Dobešice",
+          "time": "13:40"
+        }
+      ]
+    },
+    {
+      "features": [
+        "prac"
+      ],
+      "stops": [
+        {
+          "stop": "Hradiště",
+          "time": "14:44"
+        },
+        {
+          "stop": "Ke Střelnici",
+          "time": "14:45"
+        },
+        {
+          "stop": "Na Rozhledně",
+          "time": "14:47"
+        },
+        {
+          "stop": "U autobusového nádraží",
+          "time": "14:49"
+        },
+        {
+          "stop": "Nádražní",
+          "time": "14:50"
+        },
+        {
+          "stop": "Budovcova",
+          "time": "14:52"
+        },
+        {
+          "stop": "Harantova",
+          "time": "14:54"
+        },
+        {
+          "stop": "Žižkova",
+          "time": "14:56"
+        },
+        {
+          "stop": "Logry",
+          "time": "14:59"
+        },
+        {
+          "stop": "Erbenova",
+          "time": "15:02"
+        },
+        {
+          "stop": "Nábřeží 1. máje",
+          "time": "15:04"
+        },
+        {
+          "stop": "Dvořákova",
+          "time": "15:05"
+        },
+        {
+          "stop": "Pražská",
+          "time": "15:07"
+        },
+        {
+          "stop": "Na Kuchyňce",
+          "time": "15:08"
+        },
+        {
+          "stop": "Průmyslová",
+          "time": "15:11"
+        },
+        {
+          "stop": "Čížovská",
+          "time": "15:12"
+        },
+        {
+          "stop": "Dobešice",
+          "time": "15:14"
+        }
+      ]
+    },
+    {
+      "features": [
+        "prac"
+      ],
+      "stops": [
+        {
+          "stop": "Hradiště",
+          "time": "15:45"
+        },
+        {
+          "stop": "Ke Střelnici",
+          "time": "15:46"
+        },
+        {
+          "stop": "Na Rozhledně",
+          "time": "15:48"
+        },
+        {
+          "stop": "U autobusového nádraží",
+          "time": "15:50"
+        },
+        {
+          "stop": "Nádražní",
+          "time": "15:51"
+        },
+        {
+          "stop": "Budovcova",
+          "time": "15:53"
+        },
+        {
+          "stop": "Harantova",
+          "time": "15:55"
+        },
+        {
+          "stop": "Žižkova",
+          "time": "15:57"
+        },
+        {
+          "stop": "Logry",
+          "time": "16:00"
+        },
+        {
+          "stop": "Erbenova",
+          "time": "16:03"
+        },
+        {
+          "stop": "Nábřeží 1. máje",
+          "time": "16:05"
+        },
+        {
+          "stop": "Dvořákova",
+          "time": "16:06"
+        },
+        {
+          "stop": "Pražská",
+          "time": "16:08"
+        },
+        {
+          "stop": "Na Kuchyňce",
+          "time": "16:09"
+        },
+        {
+          "stop": "Průmyslová",
+          "time": "16:12"
+        },
+        {
+          "stop": "Čížovská",
+          "time": "16:13"
+        },
+        {
+          "stop": "Dobešice",
+          "time": "16:15"
+        }
+      ]
+    },
+    {
+      "features": [
+        "prac"
+      ],
+      "stops": [
+        {
+          "stop": "Hradiště",
+          "time": "16:15"
+        },
+        {
+          "stop": "Ke Střelnici",
+          "time": "16:16"
+        },
+        {
+          "stop": "Na Rozhledně",
+          "time": "16:18"
+        },
+        {
+          "stop": "U autobusového nádraží",
+          "time": "16:20"
+        },
+        {
+          "stop": "Nádražní",
+          "time": "16:21"
+        },
+        {
+          "stop": "Budovcova",
+          "time": "16:23"
+        },
+        {
+          "stop": "Harantova",
+          "time": "16:25"
+        },
+        {
+          "stop": "Žižkova",
+          "time": "16:27"
+        },
+        {
+          "stop": "Logry",
+          "time": "16:30"
+        },
+        {
+          "stop": "Erbenova",
+          "time": "16:33"
+        },
+        {
+          "stop": "Nábřeží 1. máje",
+          "time": "16:35"
+        },
+        {
+          "stop": "Dvořákova",
+          "time": "16:36"
+        },
+        {
+          "stop": "Pražská",
+          "time": "16:38"
+        },
+        {
+          "stop": "Na Kuchyňce",
+          "time": "16:39"
+        },
+        {
+          "stop": "Průmyslová",
+          "time": "16:42"
+        },
+        {
+          "stop": "Čížovská",
+          "time": "16:43"
+        },
+        {
+          "stop": "Dobešice",
+          "time": "16:45"
+        }
+      ]
+    },
+    {
+      "features": [
+        "68",
+        "7",
+        "prac"
+      ],
+      "stops": [
+        {
+          "stop": "Hradiště",
+          "time": "21:10"
+        },
+        {
+          "stop": "Ke Střelnici",
+          "time": "21:11"
+        },
+        {
+          "stop": "Na Rozhledně",
+          "time": "21:13"
+        },
+        {
+          "stop": "U autobusového nádraží",
+          "time": "21:15"
+        },
+        {
+          "stop": "Nádražní",
+          "time": "21:16"
+        },
+        {
+          "stop": "Budovcova",
+          "time": "21:18"
+        },
+        {
+          "stop": "Harantova",
+          "time": "21:20"
+        },
+        {
+          "stop": "Žižkova",
+          "time": "21:22"
+        },
+        {
+          "stop": "Logry",
+          "time": "21:25"
+        },
+        {
+          "stop": "Erbenova",
+          "time": "21:28"
+        },
+        {
+          "stop": "Nábřeží 1. máje",
+          "time": "21:30"
+        },
+        {
+          "stop": "Dvořákova",
+          "time": "21:31"
+        },
+        {
+          "stop": "Pražská",
+          "time": "21:33"
+        },
+        {
+          "stop": "Na Kuchyňce",
+          "time": "21:34"
+        },
+        {
+          "stop": "Průmyslová",
+          "time": "21:37"
+        },
+        {
+          "stop": "Čížovská",
+          "time": "21:38"
+        },
+        {
+          "stop": "Dobešice",
+          "time": "21:40"
+        }
+      ]
+    }
+  ]
+}
