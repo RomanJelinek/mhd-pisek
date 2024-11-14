@@ -25,8 +25,16 @@ import {
   ListItem,
   ListItemText,
   Box,
+  Chip,
+  Switch,
+  FormControlLabel,
+  Paper,
+  useTheme,
+  useMediaQuery,
 } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import DirectionsBusIcon from "@mui/icons-material/DirectionsBus";
+import AccessTimeIcon from "@mui/icons-material/AccessTime";
 import { parse, isBefore, format } from "date-fns";
 import { applyFilters } from "./filters";
 
@@ -57,25 +65,27 @@ interface BusStopDetailProps {
 }
 
 const BusStopDetail: React.FC<BusStopDetailProps> = ({ line }) => {
+  const [showPastDepartures, setShowPastDepartures] = useState(false);
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+
   if (!line) return null;
 
-  const [showPastDepartures, setShowPastDepartures] = useState(false);
-
   const dataSets: LineData[] = [
-    { ...line1, roads: line1.roads },
-    { ...line2, roads: line2.roads },
-    { ...line3, roads: line3.roads },
-    { ...line4, roads: line4.roads },
-    { ...line5, roads: line5.roads },
-    { ...line6, roads: line6.roads },
-    { ...line7, roads: line7.roads },
-    { ...line1Turned, roads: line1Turned.roads },
-    { ...line2Turned, roads: line2Turned.roads },
-    { ...line3Turned, roads: line3Turned.roads },
-    { ...line4Turned, roads: line4Turned.roads },
-    { ...line5Turned, roads: line5Turned.roads },
-    { ...line6Turned, roads: line6Turned.roads },
-    { ...line7Turned, roads: line7Turned.roads },
+    line1,
+    line2,
+    line3,
+    line4,
+    line5,
+    line6,
+    line7,
+    line1Turned,
+    line2Turned,
+    line3Turned,
+    line4Turned,
+    line5Turned,
+    line6Turned,
+    line7Turned,
   ];
 
   const extractStops = (dataSet: LineData): DirectionData[] => {
@@ -121,22 +131,28 @@ const BusStopDetail: React.FC<BusStopDetailProps> = ({ line }) => {
   );
 
   return (
-    <>
-      <Typography variant="h4" gutterBottom>
+    <Paper elevation={3} sx={{ p: 3, maxWidth: 800, mx: "auto" }}>
+      <Typography variant="h4" gutterBottom align="center">
         Odjezdy ze stanice: {line}
       </Typography>
       {pastDeparturesExist && (
-        <Box display="flex" justifyContent="flex-end" mb={1}>
-          <Typography
-            fontSize={13}
-            color="secondary"
-            sx={{ cursor: "pointer", textDecoration: "underline" }}
-            onClick={() => setShowPastDepartures(!showPastDepartures)}
-          >
-            {showPastDepartures
-              ? "Skrýt minulé odjezdy"
-              : "Zobrazit minulé odjezdy"}
-          </Typography>
+        <Box display="flex" justifyContent="flex-end" mb={2}>
+          <FormControlLabel
+            control={
+              <Switch
+                checked={showPastDepartures}
+                onChange={() => setShowPastDepartures(!showPastDepartures)}
+                color="primary"
+              />
+            }
+            label={
+              <Typography variant="body2" color="textSecondary">
+                {showPastDepartures
+                  ? "Skrýt minulé odjezdy"
+                  : "Zobrazit minulé odjezdy"}
+              </Typography>
+            }
+          />
         </Box>
       )}
       {allDepartures
@@ -149,38 +165,67 @@ const BusStopDetail: React.FC<BusStopDetailProps> = ({ line }) => {
           const departureTime = parse(departure.time, "HH:mm", new Date());
           const isPast = isBefore(departureTime, currentTime);
 
-          console.log(departureTime);
-
           return (
             <Accordion
-              sx={{
-                width: "100%",
-                ...(isPast && { opacity: 0.5 }),
-              }}
               key={`departure-${index}`}
+              sx={{
+                mb: 1,
+                opacity: isPast ? 0.6 : 1,
+                transition: "opacity 0.3s",
+                "&:hover": {
+                  opacity: 1,
+                },
+              }}
             >
-              <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-                <Box display="flex" alignItems="center" width="100%">
-                  <Typography>{format(departureTime, "HH:mm")}</Typography>
-                  <Box display="flex" ml={4} gap={4}>
-                    <Typography color="info.main">
-                      {departure.lineNumber}
-                    </Typography>
-                    <i>
-                      <Typography color="textSecondary" mr={2}>
-                        směr {departure.direction}
-                      </Typography>
-                    </i>
+              <AccordionSummary
+                expandIcon={<ExpandMoreIcon />}
+                sx={{
+                  backgroundColor: theme.palette.background.default,
+                }}
+              >
+                <Box
+                  display="flex"
+                  alignItems="center"
+                  width="100%"
+                  flexWrap={isMobile ? "wrap" : "nowrap"}
+                >
+                  <Box display="flex" alignItems="center" mr={2} minWidth={80}>
+                    <AccessTimeIcon
+                      sx={{ mr: 1, color: theme.palette.text.secondary }}
+                    />
+                    <Typography>{format(departureTime, "HH:mm")}</Typography>
                   </Box>
+                  <Chip
+                    icon={<DirectionsBusIcon />}
+                    label={departure.lineNumber}
+                    color="primary"
+                    size="small"
+                    sx={{ mr: 2 }}
+                  />
+                  <Typography
+                    color="textSecondary"
+                    sx={{
+                      fontStyle: "italic",
+                      flexGrow: 1,
+                      textAlign: isMobile ? "left" : "right",
+                    }}
+                  >
+                    směr {departure.direction}
+                  </Typography>
                 </Box>
               </AccordionSummary>
               <AccordionDetails>
-                <List>
+                <List dense>
                   {departure.following.map((stop, idx) => (
-                    <ListItem key={`following-stop-${index}-${idx}`}>
+                    <ListItem
+                      key={`following-stop-${index}-${idx}`}
+                      divider={idx !== departure.following.length - 1}
+                    >
                       <ListItemText
                         primary={stop.station}
                         secondary={stop.time}
+                        primaryTypographyProps={{ variant: "body2" }}
+                        secondaryTypographyProps={{ variant: "caption" }}
                       />
                     </ListItem>
                   ))}
@@ -189,7 +234,7 @@ const BusStopDetail: React.FC<BusStopDetailProps> = ({ line }) => {
             </Accordion>
           );
         })}
-    </>
+    </Paper>
   );
 };
 
