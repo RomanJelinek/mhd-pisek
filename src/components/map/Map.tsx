@@ -6,18 +6,23 @@ import { useTheme } from "@mui/material/styles";
 import "leaflet-defaulticon-compatibility";
 import "leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css";
 import "leaflet/dist/leaflet.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
 import { busIcon } from "../markers/BusStopIcon";
 import Modal from "../Modal";
 import BusStopDetail from "../modalModules/BusStopDetail";
+import Smartlook from "smartlook-client";
 import { lines } from "./lines";
 
 const Map = () => {
   const { modalState, openModal, closeModal } = useModalControl();
   const [busLine, setBusLine] = useState<string | undefined>(undefined);
   const theme = useTheme();
+
+  useEffect(() => {
+    Smartlook.init("e7265bdbb92a76d122055bc6d9953aad844c695a");
+  }, []);
 
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
