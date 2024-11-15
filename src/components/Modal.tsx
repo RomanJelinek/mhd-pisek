@@ -18,7 +18,7 @@ const Modal = ({ isOpen, modalContent, onClose }: ModalProps) => {
           sx={{
             position: "absolute",
             right: 8,
-            top: 8,
+            top: 4,
             color: "grey.500",
           }}
         >
@@ -29,8 +29,8 @@ const Modal = ({ isOpen, modalContent, onClose }: ModalProps) => {
           flexDirection="column"
           justifyContent="center"
           alignItems="center"
-          paddingY={4}
-          paddingX={2}
+          paddingY={6}
+          paddingX={1}
           gap={2}
         >
           {modalContent}
