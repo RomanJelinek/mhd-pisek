@@ -21,7 +21,7 @@ const Map = () => {
   const theme = useTheme();
 
   useEffect(() => {
-    Smartlook.init("e7265bdbb92a76d122055bc6d9953aad844c695a");
+    Smartlook.init("3143f866d919dff2a0bd9de89d33bf2891fc0de3");
   }, []);
 
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
